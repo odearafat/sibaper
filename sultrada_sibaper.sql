@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 07, 2018 at 10:55 AM
--- Server version: 10.1.30-MariaDB
+-- Generation Time: 18 Feb 2018 pada 22.28
+-- Versi Server: 10.1.30-MariaDB
 -- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `autentifikasi`
+-- Struktur dari tabel `autentifikasi`
 --
 
 CREATE TABLE `autentifikasi` (
@@ -37,7 +37,7 @@ CREATE TABLE `autentifikasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `autentifikasi`
+-- Dumping data untuk tabel `autentifikasi`
 --
 
 INSERT INTO `autentifikasi` (`username`, `password`, `niplama`, `id_level`, `id_sibaper`) VALUES
@@ -446,7 +446,7 @@ INSERT INTO `autentifikasi` (`username`, `password`, `niplama`, `id_level`, `id_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `barang_kendaraan`
+-- Struktur dari tabel `barang_kendaraan`
 --
 
 CREATE TABLE `barang_kendaraan` (
@@ -463,7 +463,7 @@ CREATE TABLE `barang_kendaraan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `barang_kendaraan`
+-- Dumping data untuk tabel `barang_kendaraan`
 --
 
 INSERT INTO `barang_kendaraan` (`id_kendaraan`, `no_pol`, `no_rangka`, `no_mesin`, `tahun_kendaraan`, `tgl_stnk`, `niplama`, `idsatker`, `id_jenis_bmn`, `link_foto`) VALUES
@@ -813,7 +813,7 @@ INSERT INTO `barang_kendaraan` (`id_kendaraan`, `no_pol`, `no_rangka`, `no_mesin
 -- --------------------------------------------------------
 
 --
--- Table structure for table `barang_non_kendaraan`
+-- Struktur dari tabel `barang_non_kendaraan`
 --
 
 CREATE TABLE `barang_non_kendaraan` (
@@ -827,7 +827,7 @@ CREATE TABLE `barang_non_kendaraan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `barang_non_kendaraan`
+-- Dumping data untuk tabel `barang_non_kendaraan`
 --
 
 INSERT INTO `barang_non_kendaraan` (`id_non_kendaraan`, `identitas_barang`, `tahun`, `id_satker`, `id_jenis_bmn`, `niplama`, `link_foto`) VALUES
@@ -883,7 +883,7 @@ INSERT INTO `barang_non_kendaraan` (`id_non_kendaraan`, `identitas_barang`, `tah
 -- --------------------------------------------------------
 
 --
--- Table structure for table `barang_persediaan`
+-- Struktur dari tabel `barang_persediaan`
 --
 
 CREATE TABLE `barang_persediaan` (
@@ -894,7 +894,7 @@ CREATE TABLE `barang_persediaan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `barang_persediaan`
+-- Dumping data untuk tabel `barang_persediaan`
 --
 
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
@@ -1089,7 +1089,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010305008000036', 'Cil Handwash Freshen Up', 'Buah', '7400'),
 ('1010304999000005', 'Cleaning Tape Back Up', 'Buah', '7400'),
 ('1010304999000004', 'Catridge Tape Back Up', 'Buah', '7400'),
-('1010302002000039', 'Kertas Double Side Glossy A4', 'Buah', '7400'),
+('1010302002000039', 'Kertas Double Side Glossy A4 E-Print', 'Buah', '7400'),
 ('1010301999999004', 'Tempat ATK Mini Desk', 'Buah', '7400'),
 ('1010304006000001', 'Flash Disk Sandisk 8 GB', 'Buah', '7400'),
 ('1010306001000008', 'Coverter HDMI to VGA box PC', 'Buah', '7400'),
@@ -1118,7 +1118,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010101999000004', 'Tulisan Strofom', 'Lusin', '7400'),
 ('1010305002000019', 'Master Mat Keset Bulu Eksklusif', 'Buah', '7400'),
 ('1010101006000001', 'Cat Kayu', 'Kaleng', '7400'),
-('1010305002000018', 'Keset Cleanmatic Microfibre', 'Buah', '7400'),
+('1010305002000018', 'Keset Cleanmatic Vertical Microfibre', 'Buah', '7400'),
 ('1010305003000006', 'Selang Plastik Falcon', 'Meter', '7400'),
 ('1010305001000001', 'Sapu Ijuk Plastik Nagata', 'Buah', '7400'),
 ('1010301001000033', 'Spidol Jumbo Artline', 'Buah', '7400'),
@@ -1600,9 +1600,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010501008000058', 'Statistik Produksi Tanaman Padi, Palawija, Sayuran & Buah2an Sultra Tahun 2010', 'Eksemplar', '7400'),
 ('1010501008000057', 'PDRB Provinsi Sultra Tahun 2006-2010', 'Eksemplar', '7400'),
 ('1010101003000001', 'Kaca', 'Lembar', '7400'),
-('1010301005000010', 'Block Note Besar', 'Buah', '7400'),
-('1010302001000017', 'Kertas Plano Putih', 'Lembar', '7400');
+('1010301005000010', 'Block Note Besar', 'Buah', '7400');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010302001000017', 'Kertas Plano Putih', 'Lembar', '7400'),
 ('1010302001000016', 'Kertas Buram Coklat Plano', 'Lembar', '7400'),
 ('1010301001000008', 'Pensil Matic Grip faber Castle', 'Buah', '7400'),
 ('1010301001000001', 'Pensil Staedler 2B', 'Batang', '7400'),
@@ -1977,7 +1977,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010307007000013', 'Spanduk 6x2 Meter', 'Buah', '7400'),
 ('1010501006000454', 'Statistik NTP Prov. Sulawesi Tenggara 2012', 'Eksemplar', '7400'),
 ('1010306999000001', 'Senter Aoki Led', 'Buah', '7400'),
-('1010306999000003', 'Senter Polisi LED', 'Buah', '7400'),
+('1010306999000003', 'Senter LED Krisbow Flash Light', 'Buah', '7400'),
 ('1010306999000004', 'MCL Signal Baton', 'Buah', '7400'),
 ('1010301005000008', 'Buku Binner', 'Buah', '7400'),
 ('1010306010000004', 'Batu batere Besar', 'Biji', '7400'),
@@ -2003,7 +2003,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010307007000011', 'Rompi Inda_ST 2013', 'Buah', '7400'),
 ('1010307007000012', 'Topi Inda', 'Buah', '7400'),
 ('1010305005000003', 'Kunci Padlock Krisbow', 'Buah', '7400'),
-('1010305002000011', 'Kain Pel loby', 'Buah', '7400'),
+('1010305002000011', 'Keset Tikar Meteran', 'Meter', '7400'),
 ('1010306999000002', 'Mesin Stella Matic', 'Buah', '7400'),
 ('1010305012000008', 'Parfum Stella Matic Refill 225 ml', 'Buah', '7400'),
 ('1010304003000003', 'Belt Assembly For T-Series', 'Buah', '7400'),
@@ -2257,7 +2257,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010301008000008', 'Cutter Kecil SDI', 'Buah', '7400'),
 ('1010301007000001', 'Mistar besi 50 cm', 'Buah', '7400'),
 ('1010301006000002', 'Map snelhekter biasa', 'Buah', '7400'),
-('1010301006000003', 'Map snelhekter plastik', 'Buah', '7400'),
+('1010301006000003', 'Map snelhekter plastik Springfile Folder', 'Buah', '7400'),
 ('1010301006000001', 'Map biasa', 'Buah', '7400'),
 ('1010301006000005', 'Map Ordner', 'Buah', '7400'),
 ('1010301006000004', 'Map Logo BPS', 'Buah', '7400'),
@@ -2327,10 +2327,10 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010302002000092', 'VSEN15 P', 'Lembar', '7400'),
 ('1010302002000093', 'VSEN15 DSRT', 'Lembar', '7400'),
 ('1010302002000096', 'Pedoman Kor da Konsumsi Susenas 2015', 'Buah', '7400'),
-('1010302002000095', 'Pedoman Kepala Susenas 2015', 'Buah', '7400'),
-('1010302002000097', 'Pedoman Pengawasan Konsumsi & Pengeluaran Susenas 2015', 'Buah', '7400'),
-('1010302002000098', 'Kuesioner VSEN15 K', 'Lembar', '7400');
+('1010302002000095', 'Pedoman Kepala Susenas 2015', 'Buah', '7400');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010302002000097', 'Pedoman Pengawasan Konsumsi & Pengeluaran Susenas 2015', 'Buah', '7400'),
+('1010302002000098', 'Kuesioner VSEN15 K', 'Lembar', '7400'),
 ('1010305005000004', 'Kunci Pipa Pralon', 'Buah', '7400'),
 ('1010399999000263', 'Buku Panduan Pegawai SE 2016', 'Buah', '7400'),
 ('1010304006000012', 'USB Adaptor WIfi', 'Buah', '7400'),
@@ -2361,7 +2361,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010305004000022', 'Keset Kaki Warna', 'Buah', '7400'),
 ('1010304006000013', 'Flash Disk 8 Gb Visipro', 'Buah', '7400'),
 ('1010306002000019', 'Lampu Philips LED 6 Watt', 'Buah', '7400'),
-('1010305004000023', 'Kantong Plastik Sampah Besar', 'Buah', '7400'),
+('1010305004000023', 'Kantong Plastik Sampah Besar 90x150 cm', 'Pak', '7400'),
 ('1010306010000005', 'Batere A2 Recharger', 'Buah', '7400'),
 ('1010306010000006', 'Batere A3 Recharger', 'Buah', '7400'),
 ('1010307004000002', 'Kaos Tangan Plastik', 'Buah', '7400'),
@@ -2945,7 +2945,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010305008000046', 'Handsoap Cil', 'Buah', '7400'),
 ('1010305008000047', 'Handsoap refill Cil', 'Buah', '7400'),
 ('1010305008000048', 'Obat Nyamuk Hit', 'Buah', '7400'),
-('1010305002000037', 'Kain Lap Sintetis Penyerap Yokohama', 'Buah', '7400'),
+('1010305002000037', 'Kain Lap Sintetis Tebal', 'Buah', '7400'),
 ('1010305008000049', 'Wipol Pembersih Kamar Mandi', 'Buah', '7400'),
 ('1010305012000017', 'Pengharum Kamar Mandi Bagus Lily', 'Buah', '7400'),
 ('1010304006000014', 'Flash Disk HP Usb Drive 32 GB', 'Buah', '7400'),
@@ -2964,11 +2964,11 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010399999000022', 'Buku Panduan Publisitas SE2016 untuk Pengusaha', 'Buku', '7404'),
 ('1010399999000021', 'Buku Pedoman Publisitas untuk Pegawai', 'Buku', '7404'),
 ('1010399999000020', 'Leaflet SE2016', 'Set', '7404'),
-('1010399999000019', 'PIN SE2016', 'Buah', '7404'),
+('1010399999000019', 'PIN SE2016', 'Buah', '7404');
+INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
 ('1010399999000018', 'Gantungan Kunci SE2016', 'Buah', '7404'),
 ('1010307007000051', 'Topi', 'Buah', '7404'),
-('1010307007000050', 'Rompi', 'Buah', '7404');
-INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010307007000050', 'Rompi', 'Buah', '7404'),
 ('1010399999000017', 'Pulpen', 'Buah', '7404'),
 ('1010399999000016', 'Payung Lipat', 'Buah', '7404'),
 ('1010399999000011', 'Baju Kaos', 'Lembar', '7404'),
@@ -3685,9 +3685,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010301999000017', 'Box File', 'Lusin', '7404'),
 ('1010301006000023', 'Map Snel Hecter', 'Lusin', '7404'),
 ('1010301008000006', 'Cutter L500', 'Buah', '7404'),
-('1010501006000134', 'Statistik Daerah Kabupaten Kolaka Tahun 2014', 'Eksampler', '7404'),
-('1010501006000135', 'Statistik Daerah Kabupaten Kolaka Timur Tahun 2014', 'Eksampler', '7404');
+('1010501006000134', 'Statistik Daerah Kabupaten Kolaka Tahun 2014', 'Eksampler', '7404');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010501006000135', 'Statistik Daerah Kabupaten Kolaka Timur Tahun 2014', 'Eksampler', '7404'),
 ('1010501006000136', 'Statistik Daerah Kecamatan Wolo Tahun 2014', 'Eksampler', '7404'),
 ('1010501006000137', 'Statistik Daerah Kecamatan Samaturu Tahun 2014', 'Eksampler', '7404'),
 ('1010501006000138', 'Statistik Daerah Kecamatan Latambaga Tahun 2014', 'Eksampler', '7404'),
@@ -4327,9 +4327,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010501006000004', 'BUKU KECAMATAN WAWONII SELATAN DALAM ANGKA', 'BUKU', '7403'),
 ('1010501006000003', 'BUKU KECAMATAN WAWONII TENGAH DALAM ANGKA', 'BUKU', '7403'),
 ('1010501006000002', 'BUKU PDRB KAB. KONAWE 2006-2010', 'BUKU', '7403'),
-('1010501006000001', 'BUKU KAB. KONAWE DALAM ANGKA 2011', 'BUKU', '7403'),
-('1010305008000039', 'PEMBERSIH LANTAI', 'BUAH', '7403');
+('1010501006000001', 'BUKU KAB. KONAWE DALAM ANGKA 2011', 'BUKU', '7403');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010305008000039', 'PEMBERSIH LANTAI', 'BUAH', '7403'),
 ('1010304010000001', 'MOUSE MERK TOSHIBA', 'BUAH', '7403'),
 ('1010501006000222', 'PENGELUARAN KONSUMSI PENDUDUK SULTRA 2014', 'BUKU', '7403'),
 ('1010501006000223', 'STAT. KESEJAHTERAAN RAKYAT SULTRA 2014', 'BUKU', '7403'),
@@ -5116,9 +5116,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010301007000005', 'Mistar Almenium 30 cm', 'buah', '7401'),
 ('1010301010000014', 'lem slate', 'buah', '7401'),
 ('1010305999000005', 'pos it', 'buah', '7401'),
-('1010301003000022', 'paper clips no 3', 'dos', '7401'),
-('1010301013000003', 'isi steples no 3', 'dos', '7401');
+('1010301003000022', 'paper clips no 3', 'dos', '7401');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010301013000003', 'isi steples no 3', 'dos', '7401'),
 ('1010301010000015', 'lem cair', 'buah', '7401'),
 ('1010301003000023', 'stapler spi 1129', 'buah', '7401'),
 ('1010301001000031', 'pensil 2b stabilo', 'lusin', '7401'),
@@ -5929,9 +5929,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010305001000003', 'Serokan Sampah', 'buah', '7472'),
 ('1010305001000001', 'sapu', 'buah', '7472'),
 ('1010305001000004', 'Sapu lidi', 'buah', '7472'),
-('1010304006000006', 'FLASDISH 1 GIGA', 'BUAH', '7472'),
-('1010304006000005', 'FLAS DISK 2 GIGA', 'BUAH', '7472');
+('1010304006000006', 'FLASDISH 1 GIGA', 'BUAH', '7472');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010304006000005', 'FLAS DISK 2 GIGA', 'BUAH', '7472'),
 ('1010304006000007', 'Flash Disk 8 Giga', 'Buah', '7472'),
 ('1010304006000008', 'Flash Disk 4 Giga', 'Buah', '7472'),
 ('1010304005000010', 'DISKETTE', 'BUAH', '7472'),
@@ -6642,9 +6642,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010501008000194', 'Statistik Daerah Kecamatan Rarowatu 2013', 'Buah', '7406'),
 ('1010501008000190', 'Statistik Daerah Kecamatan Rumbia 2013', 'Buah', '7406'),
 ('1010501008000191', 'Statistik Daerah Kecamatan Mataoleo 2013', 'Buah', '7406'),
-('1010501008000192', 'Statistik Daerah Kecamatan Kepulauan Masaloka Raya 2013', 'Buah', '7406'),
-('1010501008000193', 'Statistik Daerah Kecamatan Rumbia Tengah 2013', 'Buah', '7406');
+('1010501008000192', 'Statistik Daerah Kecamatan Kepulauan Masaloka Raya 2013', 'Buah', '7406');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010501008000193', 'Statistik Daerah Kecamatan Rumbia Tengah 2013', 'Buah', '7406'),
 ('1010501008000187', 'Statistik Daerah Kecamatan Kabaena Barat 2013', 'Buah', '7406'),
 ('1010501008000188', 'Statistik Daerah Kecamatan Kabaena Timur 2013', 'Buah', '7406'),
 ('1010501008000186', 'Statistik Daerah Kecamatan Kabaena Selatan 2013', 'Buah', '7406'),
@@ -7417,9 +7417,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010399999000181', 'Statistik Daerah Kecamatan Rumbia 2014', 'Buku', '7406'),
 ('1010399999000182', 'Statistik Daerah Kecamatan Mataoleo 2014', 'Buku', '7406'),
 ('1010399999000183', 'Statistik Daerah Kecamatan Kep. Masaloka Raya 2014', 'Buku', '7406'),
-('1010399999000184', 'Statistik Daerah Kecamatan Rumbia Tengah 2014', 'Buku', '7406'),
-('1010399999000185', 'Statistik Daerah Kecamatan Rarowatu 2014', 'Buku', '7406');
+('1010399999000184', 'Statistik Daerah Kecamatan Rumbia Tengah 2014', 'Buku', '7406');
 INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALUES
+('1010399999000185', 'Statistik Daerah Kecamatan Rarowatu 2014', 'Buku', '7406'),
 ('1010399999000186', 'Statistik Daerah Kecamatan Rarowatu Utara 2014', 'Buku', '7406'),
 ('1010399999000187', 'Statistik Daerah Kecamatan Matausu 2014', 'Buku', '7406'),
 ('1010399999000188', 'Statistik Daerah Kecamatan Lantari Jaya 2014', 'Buku', '7406'),
@@ -12128,9 +12128,9 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010305012000005', 'Tempat Parfum Stella Matic', 'Buah', '7400'),
 ('1010305008000039', 'handoap cussons carex sensitive', 'Buah', '7400'),
 ('1010305008000052', 'Pledge Aerosol 350 ml', 'Buah', '7400'),
-('1010305002000022', 'Tissue Nice Travel Pack', 'Buah', '7400'),
-('1010305002000021', 'Tissue Nice Refil 200 s', 'Buah', '7400'),
-('1010305002000025', 'Kain Lap Sintetis Penyerap Yokohama', 'Buah', '7400'),
+('1010305002000022', 'Tissue Nice refill 200 small', 'Buah', '7400'),
+('1010305002000021', 'Tissue Paseo 220 sheet refill', 'Buah', '7400'),
+('1010305002000025', 'Kain Lap Sintetis Penyerap Yokohama tebal', 'Buah', '7400'),
 ('1010305002000026', 'Alat Pel Pemutar', 'Buah', '7400'),
 ('1010305002000039', 'Spons Tapas Tebal 2 Pc', 'Buah', '7400'),
 ('1010305002000040', 'Spons Biasa Lily', 'Buah', '7400'),
@@ -12157,7 +12157,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010301003000028', 'Staples No. 3 Etona', 'Buah', '7400'),
 ('1010301003000029', 'Hekter Stapler SDI HD-50 No. 3', 'Buah', '7400'),
 ('1010301008000009', 'Rautan Faber Castle 125', 'Buah', '7400'),
-('1010305999000041', 'Tisssue Paseo Refil 220 Sheet 2 Ply', 'Buah', '7400'),
+('1010305999000041', 'Gunting Ranting Oris', 'Buah', '7400'),
 ('1010305999900004', 'Tissue Paseo Refil 220 Sheet 2 Ply', 'Buah', '7400'),
 ('1010306010000020', 'Batu Batere 3/4 Panasonic Prima UM-2U', 'Biji', '7400'),
 ('1010305012000019', 'Glade Aerosol 350 ml (spray)', 'Buah', '7400'),
@@ -12178,7 +12178,7 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010306002000020', 'Lampu LED Panasonic 13 Watt', 'Buah', '7400'),
 ('1010305006000004', 'Karet Gelang', 'Bungkus', '7400'),
 ('1010302004000011', 'Amplop Putih Kecil J-Plus', 'Buah', '7400'),
-('1010306010000021', 'Batu Batere 9V SWC Eveready', 'Buah', '7400'),
+('1010306010000021', 'Batu Batere ABC Batt R-14', 'Buah', '7400'),
 ('1010305002000042', 'Tissue Roll Multy', 'Buah', '7400'),
 ('1010301006000040', 'Plastik Dokumen Uk Folio', 'Pak', '7400'),
 ('1010301010000023', 'Lakban Bening Kecil Panfix', 'Buah', '7400'),
@@ -12202,12 +12202,23 @@ INSERT INTO `barang_persediaan` (`kd_brg`, `ur_brg`, `satuan`, `id_satker`) VALU
 ('1010301010000009', 'Lakban Double Tip Besar', 'Buah', '7400'),
 ('1010301010000024', 'Sticky Notes Brilliant Cubes 4 W Kecil', 'Buah', '7400'),
 ('1010301010000019', 'Tape Lakban Accord', 'Buah', '7400'),
-('1010306005000001', 'Jerman Stacker Arde GB', 'Buah', '7400');
+('1010306005000001', 'Jerman Stacker Arde GB', 'Buah', '7400'),
+('1010301001000037', 'Pulpen E-Pro Office', 'Buah', '7400'),
+('1010302004000012', 'Amplop Kecil Putih Paperline', 'Buah', '7400'),
+('1010305002000031', 'Alat Pembersih Kaca Wiper Panjang', 'Buah', '7400'),
+('1010305004000034', 'Kantong Plastik Sampah Besar 60x100 cm', 'Pak', '7400'),
+('1010305014000005', 'Grendel Kamar Mandi Hampton Door', 'Buah', '7400'),
+('1010305014000006', 'Alat Tongkat', 'Buah', '7400'),
+('1010301010000025', 'lakban Kecil Panfix', 'Roll', '7400'),
+('1010301010000026', 'Lem Silicone Dextone Plus tembakan', 'Buah', '7400'),
+('1010305012000022', 'Parfum Bayfresh Ruangan', 'Buah', '7400'),
+('1010399999000427', 'Solar', 'Liter', '7400'),
+('1010399999000428', 'Potensi Ekonomi Prov. Sultra Analisis Hasil Listing SE2016', 'Buah', '7400');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kategori_bmn`
+-- Struktur dari tabel `kategori_bmn`
 --
 
 CREATE TABLE `kategori_bmn` (
@@ -12217,7 +12228,7 @@ CREATE TABLE `kategori_bmn` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kategori_bmn`
+-- Dumping data untuk tabel `kategori_bmn`
 --
 
 INSERT INTO `kategori_bmn` (`id_kategori`, `nm_kategori`, `link_foto`) VALUES
@@ -12241,7 +12252,7 @@ INSERT INTO `kategori_bmn` (`id_kategori`, `nm_kategori`, `link_foto`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_bidang`
+-- Struktur dari tabel `master_bidang`
 --
 
 CREATE TABLE `master_bidang` (
@@ -12250,7 +12261,7 @@ CREATE TABLE `master_bidang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_bidang`
+-- Dumping data untuk tabel `master_bidang`
 --
 
 INSERT INTO `master_bidang` (`id_bidang`, `nm_bidang`) VALUES
@@ -12264,7 +12275,7 @@ INSERT INTO `master_bidang` (`id_bidang`, `nm_bidang`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_gol`
+-- Struktur dari tabel `master_gol`
 --
 
 CREATE TABLE `master_gol` (
@@ -12274,7 +12285,7 @@ CREATE TABLE `master_gol` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_gol`
+-- Dumping data untuk tabel `master_gol`
 --
 
 INSERT INTO `master_gol` (`id_gol`, `n_gol`, `pangkat`) VALUES
@@ -12299,7 +12310,7 @@ INSERT INTO `master_gol` (`id_gol`, `n_gol`, `pangkat`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_jenis_barang`
+-- Struktur dari tabel `master_jenis_barang`
 --
 
 CREATE TABLE `master_jenis_barang` (
@@ -12308,7 +12319,7 @@ CREATE TABLE `master_jenis_barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_jenis_barang`
+-- Dumping data untuk tabel `master_jenis_barang`
 --
 
 INSERT INTO `master_jenis_barang` (`id_jenis_barang`, `nama_jenis_barang`) VALUES
@@ -12332,7 +12343,7 @@ INSERT INTO `master_jenis_barang` (`id_jenis_barang`, `nama_jenis_barang`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_jenis_bmn`
+-- Struktur dari tabel `master_jenis_bmn`
 --
 
 CREATE TABLE `master_jenis_bmn` (
@@ -12343,7 +12354,7 @@ CREATE TABLE `master_jenis_bmn` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_jenis_bmn`
+-- Dumping data untuk tabel `master_jenis_bmn`
 --
 
 INSERT INTO `master_jenis_bmn` (`id_jenis_bmn`, `merk`, `type`, `id_kategori_bmn`) VALUES
@@ -12416,7 +12427,7 @@ INSERT INTO `master_jenis_bmn` (`id_jenis_bmn`, `merk`, `type`, `id_kategori_bmn
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_level`
+-- Struktur dari tabel `master_level`
 --
 
 CREATE TABLE `master_level` (
@@ -12425,7 +12436,7 @@ CREATE TABLE `master_level` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_level`
+-- Dumping data untuk tabel `master_level`
 --
 
 INSERT INTO `master_level` (`id_level`, `ket`) VALUES
@@ -12437,7 +12448,7 @@ INSERT INTO `master_level` (`id_level`, `ket`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_org`
+-- Struktur dari tabel `master_org`
 --
 
 CREATE TABLE `master_org` (
@@ -12447,7 +12458,7 @@ CREATE TABLE `master_org` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_org`
+-- Dumping data untuk tabel `master_org`
 --
 
 INSERT INTO `master_org` (`id_org`, `nm_org`, `ket`) VALUES
@@ -12494,7 +12505,7 @@ INSERT INTO `master_org` (`id_org`, `nm_org`, `ket`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_pegawai`
+-- Struktur dari tabel `master_pegawai`
 --
 
 CREATE TABLE `master_pegawai` (
@@ -12510,7 +12521,7 @@ CREATE TABLE `master_pegawai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_pegawai`
+-- Dumping data untuk tabel `master_pegawai`
 --
 
 INSERT INTO `master_pegawai` (`niplama`, `nipbaru`, `gelar_depan`, `nama`, `gelar_belakang`, `email`, `id_gol`, `id_org`, `id_satker`) VALUES
@@ -12917,7 +12928,7 @@ INSERT INTO `master_pegawai` (`niplama`, `nipbaru`, `gelar_depan`, `nama`, `gela
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_satker`
+-- Struktur dari tabel `master_satker`
 --
 
 CREATE TABLE `master_satker` (
@@ -12926,7 +12937,7 @@ CREATE TABLE `master_satker` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_satker`
+-- Dumping data untuk tabel `master_satker`
 --
 
 INSERT INTO `master_satker` (`id_satker`, `nm_satker`) VALUES
@@ -12947,7 +12958,7 @@ INSERT INTO `master_satker` (`id_satker`, `nm_satker`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_seksi`
+-- Struktur dari tabel `master_seksi`
 --
 
 CREATE TABLE `master_seksi` (
@@ -12957,7 +12968,7 @@ CREATE TABLE `master_seksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `master_seksi`
+-- Dumping data untuk tabel `master_seksi`
 --
 
 INSERT INTO `master_seksi` (`id_seksi`, `nm_seksi`, `id_bidang`) VALUES
@@ -12991,7 +13002,7 @@ INSERT INTO `master_seksi` (`id_seksi`, `nm_seksi`, `id_bidang`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trx_keluar`
+-- Struktur dari tabel `trx_keluar`
 --
 
 CREATE TABLE `trx_keluar` (
@@ -13004,7 +13015,7 @@ CREATE TABLE `trx_keluar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `trx_keluar`
+-- Dumping data untuk tabel `trx_keluar`
 --
 
 INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satker`, `tgl_keluar`) VALUES
@@ -13187,12 +13198,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170117064137', '1010301001000007', 'b1', '1', '7400', '2017-01-17'),
 ('20170117065153', '1010303002000001', 'b1', '1', '7400', '2017-01-17'),
 ('20170117065356', '1010301999000010', 'b1', '1', '7400', '2017-01-17'),
-('20170117070057', '1010301005000014', 'b1', '1', '7400', '2017-01-17'),
-('20170117070057', '1010301006000004', 'b1', '2', '7400', '2017-01-17'),
-('20170117070057', '1010301006000001', 'b1', '10', '7400', '2017-01-17'),
-('20170117070057', '1010301001000016', 'b1', '1', '7400', '2017-01-17'),
-('20170117070057', '1010301006000012', 'b1', '4', '7400', '2017-01-17'),
-('20170117070057', '1010301003000012', 'b1', '1', '7400', '2017-01-17'),
 ('20170118070323', '1010301006000012', 'b1', '3', '7400', '2017-01-18'),
 ('20170118070323', '1010303002000001', 'b1', '4', '7400', '2017-01-18'),
 ('20170118001440', '1010301006000012', 'b3', '3', '7400', '2017-01-18'),
@@ -13220,7 +13225,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170119004236', '1010301001000002', 'b1', '5', '7400', '2017-01-19'),
 ('20170119004421', '1010301006000012', 'b1', '2', '7400', '2017-01-19'),
 ('20170119004746', '1010301006000029', 'b1', '1', '7400', '2017-01-19'),
-('20170119004904', '1010301005000014', 'b1', '1', '7400', '2017-01-19'),
 ('20170109063439', '1010306010000002', 'b6', '2', '7400', '2017-01-09'),
 ('20170109063439', '1010301010000018', 'b6', '1', '7400', '2017-01-09'),
 ('20170110080136', '1010304006000014', 'b4', '2', '7400', '2017-01-10'),
@@ -13283,16 +13287,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170131012754', '1010302001000013', 'b2', '1', '7400', '2017-01-31'),
 ('20170130014733', '1010301010000010', 'b1', '3', '7400', '2017-01-30'),
 ('20170130014733', '1010305002000006', 'b1', '10', '7400', '2017-01-30'),
-('20170131015739', '1010302001000001', 'b1', '1', '7400', '2017-01-31'),
-('20170131015739', '1010301006000027', 'b1', '1', '7400', '2017-01-31'),
-('20170131015739', '1010302001000009', 'b1', '2', '7400', '2017-01-31'),
-('20170131015739', '1010301999000011', 'b1', '1', '7400', '2017-01-31'),
-('20170131015739', '1010301010000005', 'b1', '1', '7400', '2017-01-31'),
-('20170131015739', '1010301010000003', 'b1', '1', '7400', '2017-01-31'),
-('20170131015739', '1010301010000004', 'b1', '1', '7400', '2017-01-31'),
-('20170131015739', '1010301003000019', 'b1', '1', '7400', '2017-01-31'),
-('20170131015739', '1010301005000008', 'b1', '3', '7400', '2017-01-31'),
-('20170131015739', '1010301003000015', 'b1', '2', '7400', '2017-01-31'),
 ('20170131015953', '1010301001000036', 'b1', '6', '7400', '2017-01-31'),
 ('20170131015953', '1010301001000016', 'b1', '6', '7400', '2017-01-31'),
 ('20170131015953', '1010301001000007', 'b1', '2', '7400', '2017-01-31'),
@@ -13320,13 +13314,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170207060247', '1010305999000005', 'b1', '1', '7400', '2017-02-07'),
 ('20170207060247', '1010305999000029', 'b1', '1', '7400', '2017-02-07'),
 ('20170207060247', '1010301003000019', 'b1', '2', '7400', '2017-02-07'),
-('20170201062900', '1010302001000002', 'b1', '2', '7400', '2017-02-01'),
-('20170201062900', '1010301005000014', 'b1', '1', '7400', '2017-02-01'),
-('20170201062900', '1010302001000009', 'b1', '3', '7400', '2017-02-01'),
-('20170201062900', '1010301011000005', 'b1', '1', '7400', '2017-02-01'),
-('20170201062900', '1010307007000066', 'b1', '1', '7400', '2017-02-01'),
-('20170201062900', '1010301001000016', 'b1', '1', '7400', '2017-02-01'),
-('20170201062900', '1010301001000036', 'b1', '1', '7400', '2017-02-01'),
 ('20170206063024', '1010302001000002', 'b1', '1', '7400', '2017-02-06'),
 ('20170117063151', '1010302004000008', 'b1', '20', '7400', '2017-01-17'),
 ('20170124014651', '1010304006000014', 'b1', '1', '7400', '2017-01-24'),
@@ -13375,9 +13362,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170213071736', '1010305002000033', 'b2', '3', '7400', '2017-02-13'),
 ('20170213071736', '1010301006000012', 'b2', '2', '7400', '2017-02-13'),
 ('20170213071736', '1010302001000009', 'b2', '5', '7400', '2017-02-13'),
-('20170222071920', '1010302001000009', 'b1', '1', '7400', '2017-02-22'),
-('20170222071920', '1010302001000001', 'b1', '1', '7400', '2017-02-22'),
-('20170222071920', '1010301006000012', 'b1', '2', '7400', '2017-02-22'),
 ('20170221072204', '1010302001000009', 'b1', '1', '7400', '2017-02-21'),
 ('20170221072204', '1010303002000001', 'b1', '1', '7400', '2017-02-21'),
 ('20170224072311', '1010305012000008', 'b3', '1', '7400', '2017-02-24'),
@@ -13400,7 +13384,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170209013335', '1010305009000001', 'b1', '1', '7400', '2017-02-09'),
 ('20170220014012', '1010305012000016', 'b3', '2', '7400', '2017-02-20'),
 ('20170220014012', '1010301015000002', 'b3', '3', '7400', '2017-02-20'),
-('20170227014117', '1010302001000001', 'b1', '1', '7400', '2017-02-27'),
 ('20170220014837', '1010301006000027', 'b4', '1', '7400', '2017-02-20'),
 ('20170220014837', '1010301001000007', 'b4', '1', '7400', '2017-02-20'),
 ('20170220014837', '1010301011000006', 'b4', '1', '7400', '2017-02-20'),
@@ -13469,24 +13452,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170306064447', '1010301006000004', 'b6', '12', '7400', '2017-03-06'),
 ('20170306012149', '1010305002000037', 'b1', '1', '7400', '2017-03-06'),
 ('20170309012356', '1010301006000004', 'b6', '5', '7400', '2017-03-09'),
-('20170316010306', '1010302001000009', 'b4', '5', '7400', '2017-03-16'),
-('20170316010306', '1010301003000002', 'b4', '4', '7400', '2017-03-16'),
-('20170316010306', '1010301001000072', 'b4', '12', '7400', '2017-03-16'),
-('20170316010306', '1010304006000019', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010301008008006', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010301001000002', 'b4', '12', '7400', '2017-03-16'),
-('20170316010306', '1010301001000009', 'b4', '3', '7400', '2017-03-16'),
-('20170316010306', '1010301008000003', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010301006000001', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010301003000017', 'b4', '2', '7400', '2017-03-16'),
-('20170316010306', '1010301003000026', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010301004000008', 'b4', '2', '7400', '2017-03-16'),
-('20170316010306', '1010303002000001', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010303002000008', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010303002000007', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010303002000009', 'b4', '1', '7400', '2017-03-16'),
-('20170316010306', '1010301001000006', 'b4', '2', '7400', '2017-03-16'),
-('20170316010306', '1010301003000005', 'b4', '1', '7400', '2017-03-16'),
 ('20170316010508', '1010305002000033', 'b6', '2', '7400', '2017-03-16'),
 ('20170315010717', '1010301003000002', 'b1', '1', '7400', '2017-03-15'),
 ('20170315010717', '1010301003000001', 'b1', '1', '7400', '2017-03-15'),
@@ -13632,14 +13597,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170417004809', '1010301001000035', 'b6', '1', '7400', '2017-04-17'),
 ('20170417004809', '1010301004000008', 'b6', '1', '7400', '2017-04-17'),
 ('20170417004809', '1010301008008006', 'b6', '2', '7400', '2017-04-17'),
-('20170420005114', '1010302004000007', 'b1', '200', '7400', '2017-04-20'),
-('20170420005114', '1010301003000002', 'b1', '2', '7400', '2017-04-20'),
-('20170420005114', '1010303002000001', 'b1', '2', '7400', '2017-04-20'),
-('20170420005114', '1010301001000006', 'b1', '1', '7400', '2017-04-20'),
-('20170420005114', '1010301003000019', 'b1', '1', '7400', '2017-04-20'),
-('20170420005114', '1010301008008006', 'b1', '1', '7400', '2017-04-20'),
-('20170420005114', '1010301003000005', 'b1', '1', '7400', '2017-04-20'),
-('20170420005114', '1010304002000001', 'b1', '4', '7400', '2017-04-20'),
 ('20170420005305', '1010301006000039', 'b1', '17', '7400', '2017-04-20'),
 ('20170427005601', '1010305999900004', 'b1', '3', '7400', '2017-04-27'),
 ('20170427005601', '1010304002000001', 'b1', '7', '7400', '2017-04-27'),
@@ -13708,8 +13665,7 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170410054909', '1010305002000037', 'b1', '1', '7400', '2017-04-10'),
 ('20170410054909', '1010306010000002', 'b1', '4', '7400', '2017-04-10'),
 ('20170410054909', '1010301005000002', 'b1', '2', '7400', '2017-04-10'),
-('20170419054955', '1010301006000004', 'b4', '10', '7400', '2017-04-19');
-INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satker`, `tgl_keluar`) VALUES
+('20170419054955', '1010301006000004', 'b4', '10', '7400', '2017-04-19'),
 ('20170420055034', '1010301001000002', 'b6', '5', '7400', '2017-04-20'),
 ('20170420055248', '1010302999000002', 'b3', '5', '7400', '2017-04-20'),
 ('20170420055248', '1010302001000009', 'b3', '1', '7400', '2017-04-20'),
@@ -13748,22 +13704,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170420031628', '1010306010000003', 'b1', '2', '7400', '2017-04-20'),
 ('20170420031628', '1010305008000028', 'b1', '1', '7400', '2017-04-20'),
 ('20170420031628', '1010305008000005', 'b1', '1', '7400', '2017-04-20'),
-('20170425060142', '1010301001000035', 'b1', '1', '7400', '2017-04-25'),
-('20170425060142', '1010301001000002', 'b1', '12', '7400', '2017-04-25'),
-('20170425060142', '1010305002000006', 'b1', '14', '7400', '2017-04-25'),
-('20170425060142', '1010301008000005', 'b1', '2', '7400', '2017-04-25'),
-('20170425060142', '1010301008008008', 'b1', '3', '7400', '2017-04-25'),
-('20170425060142', '1010305008000034', 'b1', '4', '7400', '2017-04-25'),
-('20170425060142', '1010306002000013', 'b1', '2', '7400', '2017-04-25'),
-('20170425060142', '1010301010000004', 'b1', '6', '7400', '2017-04-25'),
-('20170425060142', '1010301010000003', 'b1', '6', '7400', '2017-04-25'),
-('20170425060142', '1010305012000015', 'b1', '5', '7400', '2017-04-25'),
-('20170425060142', '1010305008000044', 'b1', '4', '7400', '2017-04-25'),
-('20170425060142', '1010305002000024', 'b1', '1', '7400', '2017-04-25'),
-('20170425060142', '1010305001000011', 'b1', '1', '7400', '2017-04-25'),
-('20170425060142', '1010305001000019', 'b1', '1', '7400', '2017-04-25'),
-('20170425060142', '1010301006000012', 'b1', '1', '7400', '2017-04-25'),
-('20170425060142', '1010305008000007', 'b1', '1', '7400', '2017-04-25'),
 ('20170425060344', '1010305002000033', 'b1', '2', '7400', '2017-04-25'),
 ('20170425060344', '1010301001000002', 'b1', '1', '7400', '2017-04-25'),
 ('20170425060627', '1010305999900004', 'b1', '3', '7400', '2017-04-25'),
@@ -13779,7 +13719,8 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170427061459', '1010305999900004', 'b1', '4', '7400', '2017-04-27'),
 ('20170427061459', '1010305002000006', 'b1', '2', '7400', '2017-04-27'),
 ('20170427061459', '1010306010000018', 'b1', '1', '7400', '2017-04-27'),
-('20170427061459', '1010305012000005', 'b1', '1', '7400', '2017-04-27'),
+('20170427061459', '1010305012000005', 'b1', '1', '7400', '2017-04-27');
+INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satker`, `tgl_keluar`) VALUES
 ('20170427061459', '1010306010000002', 'b1', '6', '7400', '2017-04-27'),
 ('20170427061459', '1010305002000033', 'b1', '1', '7400', '2017-04-27'),
 ('20170428010111', '1010305002000033', 'b4', '1', '7400', '2017-04-28'),
@@ -13816,8 +13757,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170505015546', '1010301006000002', 'b1', '5', '7400', '2017-05-05'),
 ('20170505015546', '1010301003000017', 'b1', '1', '7400', '2017-05-05'),
 ('20170516015730', '1010304006000018', 'b4', '1', '7400', '2017-05-16'),
-('20170508021045', '1010305002000033', 'b1', '1', '7400', '2017-05-08'),
-('20170508021045', '1010301008008008', 'b1', '1', '7400', '2017-05-08'),
 ('20170508031916', '1010302001000010', 'b4', '5', '7400', '2017-05-08'),
 ('20170503033037', '1010302001000001', 'b1', '1', '7400', '2017-05-03'),
 ('20170503033037', '1010301010000003', 'b1', '5', '7400', '2017-05-03'),
@@ -13847,8 +13786,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170515010906', '1010302004000008', 'b1', '100', '7400', '2017-05-15'),
 ('20170515010906', '1010302001000010', 'b1', '1', '7400', '2017-05-15'),
 ('20170515010906', '1010302999000002', 'b1', '2', '7400', '2017-05-15'),
-('20170515011124', '1010301003000005', 'b4', '1', '7400', '2017-05-15'),
-('20170516011236', '1010301003000005', 'b1', '1', '7400', '2017-05-16'),
 ('20170516011425', '1010304006000019', 'b1', '1', '7400', '2017-05-16'),
 ('20170510011600', '1010304006000010', 'b1', '1', '7400', '2017-05-10'),
 ('20170510011600', '1010306010000002', 'b1', '2', '7400', '2017-05-10'),
@@ -13930,25 +13867,8 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170523013135', '1010302999000002', 'b6', '4', '7400', '2017-05-23'),
 ('20170531013520', '1010301003000002', 'b4', '1', '7400', '2017-05-31'),
 ('20170602013937', '1010306010000002', 'b2', '2', '7400', '2017-06-02'),
-('20170602015153', '1010301010000012', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301001000006', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301011000006', 'b4', '2', '7400', '2017-06-02'),
-('20170602015153', '1010301004000008', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301003000005', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301001000001', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301003000002', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301008008005', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301004000009', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301003000026', 'b4', '1', '7400', '2017-06-02'),
-('20170602015153', '1010301001000016', 'b4', '1', '7400', '2017-06-02'),
 ('20170606015314', '1010305002000033', 'b1', '1', '7400', '2017-06-06'),
 ('20170606015314', '1010305999900004', 'b1', '2', '7400', '2017-06-06'),
-('20170605015530', '1010304010000001', 'b5', '1', '7400', '2017-06-05'),
-('20170605015530', '1010301003000002', 'b5', '1', '7400', '2017-06-05'),
-('20170605015530', '1010301001000016', 'b5', '1', '7400', '2017-06-05'),
-('20170605015530', '1010301001000006', 'b5', '1', '7400', '2017-06-05'),
-('20170605015530', '1010301003000005', 'b5', '1', '7400', '2017-06-05'),
-('20170605015530', '1010305999900004', 'b5', '5', '7400', '2017-06-05'),
 ('20170605015642', '1010303002000001', 'b2', '2', '7400', '2017-06-05'),
 ('20170605015642', '1010303002000008', 'b2', '1', '7400', '2017-06-05'),
 ('20170605015751', '1010301006000018', 'b1', '7', '7400', '2017-06-05'),
@@ -13978,12 +13898,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170523014340', '1010302002200041', 'b1', '1', '7400', '2017-05-23'),
 ('20170523014340', '1010302004000008', 'b1', '20', '7400', '2017-05-23'),
 ('20170523014340', '1010302004000002', 'b1', '1', '7400', '2017-05-23'),
-('20170524015218', '1010302999000002', 'b1', '1', '7400', '2017-05-24'),
-('20170524015218', '1010306010000002', 'b1', '6', '7400', '2017-05-24'),
-('20170524015218', '1010305012000019', 'b1', '1', '7400', '2017-05-24'),
-('20170524015218', '1010305002000033', 'b1', '1', '7400', '2017-05-24'),
-('20170524015218', '1010301003000005', 'b1', '1', '7400', '2017-05-24'),
-('20170524015218', '1010301006000004', 'b1', '5', '7400', '2017-05-24'),
 ('20170512015813', '1010301001000016', 'b2', '1', '7400', '2017-05-12'),
 ('20170512015813', '1010303002000001', 'b2', '1', '7400', '2017-05-12'),
 ('20170512015813', '1010301003000002', 'b2', '1', '7400', '2017-05-12'),
@@ -14006,14 +13920,9 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170609063347', '1010305004000023', 'b1', '1', '7400', '2017-06-09'),
 ('20170609063347', '1010306005000008', 'b1', '1', '7400', '2017-06-09'),
 ('20170609063820', '1010305999900004', 'b6', '1', '7400', '2017-06-09'),
-('20170609013851', '1010301010000012', 'b1', '1', '7400', '2017-06-09'),
-('20170609013851', '1010301003000026', 'b1', '1', '7400', '2017-06-09'),
-('20170609013851', '1010302999000002', 'b1', '1', '7400', '2017-06-09'),
 ('20170607014239', '1010302999000002', 'b1', '1', '7400', '2017-06-07'),
 ('20170612014426', '1010306010000002', 'b1', '2', '7400', '2017-06-12'),
 ('20170612014453', '1010302999000002', 'b1', '2', '7400', '2017-06-12'),
-('20170609015659', '1010301003000026', 'b5', '1', '7400', '2017-06-09'),
-('20170609015659', '1010301010000012', 'b5', '1', '7400', '2017-06-09'),
 ('20170613015450', '1010301006000004', 'b5', '20', '7400', '2017-06-13'),
 ('20170613015450', '1010301006000008', 'b5', '19', '7400', '2017-06-13'),
 ('20170613015450', '1010302999000002', 'b5', '4', '7400', '2017-06-13'),
@@ -14083,9 +13992,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170410033218', '1010305002000014', 'b3', '1', '7400', '2017-04-10'),
 ('20170703004201', '1010301020020000', 'b6', '2', '7400', '2017-07-03'),
 ('20170703011235', '1010302999000002', 'b1', '2', '7400', '2017-07-03'),
-('20170704013208', '1010305999900004', 'b1', '1', '7400', '2017-07-04'),
-('20170704013208', '1010301001000006', 'b1', '1', '7400', '2017-07-04'),
-('20170704013208', '1010301003000026', 'b1', '1', '7400', '2017-07-04'),
 ('20170704014239', '1010301011000006', 'b5', '2', '7400', '2017-07-04'),
 ('20170704014239', '1010301003000002', 'b5', '3', '7400', '2017-07-04'),
 ('20170704014239', '1010301001000012', 'b5', '1', '7400', '2017-07-04'),
@@ -14182,10 +14088,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170713025624', '1010301010000013', 'b1', '4', '7400', '2017-07-13'),
 ('20170713025624', '1010301006000039', 'b1', '5', '7400', '2017-07-13'),
 ('20170717030141', '1010302004000009', 'b1', '100', '7400', '2017-07-17'),
-('20170714031036', '1010302999000002', 'b1', '1', '7400', '2017-07-14'),
-('20170714031036', '1010302001000010', 'b1', '5', '7400', '2017-07-14'),
-('20170714031036', '1010301003000016', 'b1', '1', '7400', '2017-07-14'),
-('20170714031036', '1010301003000005', 'b1', '24', '7400', '2017-07-14'),
 ('20170715031422', '1010303002000001', 'b1', '1', '7400', '2017-07-15'),
 ('20170715031422', '1010302001000010', 'b1', '5', '7400', '2017-07-15'),
 ('20170717003205', '1010302001000009', 'b6', '1', '7400', '2017-07-17'),
@@ -14202,10 +14104,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170717004156', '1010305002000033', 'b1', '3', '7400', '2017-07-17'),
 ('20170717004156', '1010302001000009', 'b1', '2', '7400', '2017-07-17'),
 ('20170717004455', '1010301006000004', 'b4', '8', '7400', '2017-07-17'),
-('20170717005110', '1010303002000001', 'b1', '1', '7400', '2017-07-17'),
-('20170717005110', '1010301003000013', 'b1', '1', '7400', '2017-07-17'),
-('20170717005110', '1010301003000005', 'b1', '1', '7400', '2017-07-17'),
-('20170717005110', '1010301003000012', 'b1', '1', '7400', '2017-07-17'),
 ('20170718005604', '1010301010000004', 'b1', '1', '7400', '2017-07-18'),
 ('20170718005604', '1010301008000003', 'b1', '1', '7400', '2017-07-18'),
 ('20170718005604', '1010302001000001', 'b1', '1', '7400', '2017-07-18'),
@@ -14222,21 +14120,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170721012903', '1010302001000009', 'b4', '3', '7400', '2017-07-21'),
 ('20170721012903', '1010301010000012', 'b4', '1', '7400', '2017-07-21'),
 ('20170721012903', '1010301003000002', 'b4', '2', '7400', '2017-07-21'),
-('20170728014026', '1010302004000008', 'b1', '100', '7400', '2017-07-28'),
-('20170728014026', '1010302004000009', 'b1', '100', '7400', '2017-07-28'),
-('20170728014026', '1010301006000039', 'b1', '10', '7400', '2017-07-28'),
-('20170728014026', '1010305002000033', 'b1', '5', '7400', '2017-07-28'),
-('20170728014026', '1010305002000006', 'b1', '20', '7400', '2017-07-28'),
-('20170728014026', '1010305008000034', 'b1', '5', '7400', '2017-07-28'),
-('20170728014026', '1010301011000006', 'b1', '3', '7400', '2017-07-28'),
-('20170728014026', '1010301003000029', 'b1', '1', '7400', '2017-07-28'),
-('20170728014026', '1010301003000002', 'b1', '3', '7400', '2017-07-28'),
-('20170728014026', '1010301003000001', 'b1', '1', '7400', '2017-07-28'),
-('20170728014026', '1010306010000002', 'b1', '6', '7400', '2017-07-28'),
-('20170728014026', '1010301010000013', 'b1', '2', '7400', '2017-07-28'),
-('20170728014026', '1010302001000009', 'b1', '1', '7400', '2017-07-28'),
-('20170728014026', '1010302001000001', 'b1', '1', '7400', '2017-07-28'),
-('20170728014026', '1010305004000023', 'b1', '10', '7400', '2017-07-28'),
 ('20170728014309', '1010302001000009', 'b1', '3', '7400', '2017-07-28'),
 ('20170728014309', '1010301006000039', 'b1', '1', '7400', '2017-07-28'),
 ('20170731014820', '1010302001000009', 'b2', '5', '7400', '2017-07-31'),
@@ -14254,9 +14137,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170802001731', '1010301006000004', 'b4', '1', '7400', '2017-08-02'),
 ('20170802001731', '1010301002000005', 'b4', '1', '7400', '2017-08-02'),
 ('20170802001731', '1010301008000005', 'b4', '1', '7400', '2017-08-02'),
-('20170802002025', '1010301003000005', 'b6', '1', '7400', '2017-08-02'),
-('20170802002025', '1010301003000013', 'b6', '1', '7400', '2017-08-02'),
-('20170802002025', '1010301003000016', 'b6', '1', '7400', '2017-08-02'),
 ('20170802002710', '1010301001000006', 'b1', '1', '7400', '2017-08-02'),
 ('20170802002710', '1010301001000036', 'b1', '2', '7400', '2017-08-02'),
 ('20170802002710', '1010301010000012', 'b1', '1', '7400', '2017-08-02'),
@@ -14269,15 +14149,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170814010627', '1010301006000039', 'b1', '9', '7400', '2017-08-14'),
 ('20170814010627', '1010305002000033', 'b1', '1', '7400', '2017-08-14'),
 ('20170814010818', '1010305008000053', 'b1', '4', '7400', '2017-08-14'),
-('20170807011405', '1010301006000013', 'b1', '3', '7400', '2017-08-07'),
-('20170807011405', '1010301003000005', 'b1', '1', '7400', '2017-08-07'),
-('20170807011405', '1010305008000048', 'b1', '1', '7400', '2017-08-07'),
-('20170807011405', '1010303002000009', 'b1', '1', '7400', '2017-08-07'),
-('20170807011405', '1010303002000008', 'b1', '1', '7400', '2017-08-07'),
-('20170807011405', '1010303002000007', 'b1', '1', '7400', '2017-08-07'),
-('20170807011405', '1010305006000004', 'b1', '1', '7400', '2017-08-07'),
-('20170807011405', '1010302004000007', 'b1', '100', '7400', '2017-08-07'),
-('20170807011405', '1010301008000009', 'b1', '2', '7400', '2017-08-07'),
 ('20170811014227', '1010301010000012', 'b4', '1', '7400', '2017-08-11'),
 ('20170811015258', '1010305012000021', 'b1', '2', '7400', '2017-08-11'),
 ('20170811015258', '1010302001000009', 'b1', '2', '7400', '2017-08-11'),
@@ -14384,14 +14255,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170829071220', '1010301003000017', 'b1', '2', '7400', '2017-08-29'),
 ('20170829071220', '1010305999000003', 'b1', '2', '7400', '2017-08-29'),
 ('20170829071220', '1010301004000002', 'b1', '1', '7400', '2017-08-29'),
-('20170824075112', '1010301010000012', 'b1', '1', '7400', '2017-08-24'),
-('20170824075112', '1010302004000009', 'b1', '5', '7400', '2017-08-24'),
-('20170824075112', '1010305002000006', 'b1', '2', '7400', '2017-08-24'),
-('20170824075112', '1010305002000033', 'b1', '1', '7400', '2017-08-24'),
-('20170824075112', '1010301001000006', 'b1', '2', '7400', '2017-08-24'),
-('20170824075112', '1010302004000009', 'b1', '50', '7400', '2017-08-24'),
-('20170824075112', '1010301003000026', 'b1', '1', '7400', '2017-08-24'),
-('20170824075112', '1010301006000039', 'b1', '1', '7400', '2017-08-24'),
 ('20170824075504', '1010301003000018', 'b5', '1', '7400', '2017-08-24'),
 ('20170824075504', '1010302002200041', 'b5', '1', '7400', '2017-08-24'),
 ('20170824075504', '1010301010000010', 'b5', '1', '7400', '2017-08-24'),
@@ -14410,16 +14273,12 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170830030313', '1010301010000010', 'b1', '1', '7400', '2017-08-30'),
 ('20170831043941', '1010304006000018', 'b3', '1', '7400', '2017-08-31'),
 ('20170831043941', '1010301002000009', 'b3', '6', '7400', '2017-08-31'),
-('20170831043941', '1010301006000038', 'b3', '1', '7400', '2017-08-31');
-INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satker`, `tgl_keluar`) VALUES
+('20170831043941', '1010301006000038', 'b3', '1', '7400', '2017-08-31'),
 ('20170904044108', '1010306999000002', 'b3', '1', '7400', '2017-09-04'),
 ('20170904044108', '1010306010000002', 'b3', '2', '7400', '2017-09-04'),
 ('20171011011248', '1010302001000009', 'b6', '5', '7400', '2017-10-11'),
 ('20171005012615', '1010302001000001', 'b4', '2', '7400', '2017-10-05'),
 ('20171005012615', '1010305002000033', 'b4', '2', '7400', '2017-10-05'),
-('20171005014718', '1010301001000016', 'b4', '1', '7400', '2017-10-05'),
-('20171005014718', '1010301006000039', 'b4', '3', '7400', '2017-10-05'),
-('20171005014718', '1010301006000004', 'b4', '3', '7400', '2017-10-05'),
 ('20171004014939', '1010302002200041', 'b2', '1', '7400', '2017-10-04'),
 ('20171011015759', '1010301003000013', 'b6', '1', '7400', '2017-10-11'),
 ('20171011015759', '1010305999000035', 'b6', '1', '7400', '2017-10-11'),
@@ -14436,9 +14295,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170929010307', '1010305002000033', 'b5', '1', '7400', '2017-09-29'),
 ('20170929010307', '1010301003000026', 'b5', '1', '7400', '2017-09-29'),
 ('20170929010448', '1010301999999006', 'b6', '25', '7400', '2017-09-29'),
-('20170928010811', '1010301010000023', 'b1', '1', '7400', '2017-09-28'),
-('20170928010811', '1010301006000004', 'b1', '5', '7400', '2017-09-28'),
-('20170928010811', '1010302001000009', 'b1', '1', '7400', '2017-09-28'),
 ('20170925010953', '1010302001000009', 'b4', '3', '7400', '2017-09-25'),
 ('20170925010953', '1010301006000004', 'b4', '5', '7400', '2017-09-25'),
 ('20170926012928', '1010306010000002', 'b1', '1', '7400', '2017-09-26'),
@@ -14457,15 +14313,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170714010821', '1010305002000033', 'b6', '2', '7400', '2017-07-14'),
 ('20170714010821', '1010301001000008', 'b6', '1', '7400', '2017-07-14'),
 ('20170714010821', '1010301006000004', 'b6', '2', '7400', '2017-07-14'),
-('20171004025612', '1010301010000012', 'b1', '1', '7400', '2017-10-04'),
-('20171004025612', '1010301005000014', 'b1', '1', '7400', '2017-10-04'),
-('20170920030353', '1010301006000012', 'b1', '6', '7400', '2017-09-20'),
-('20170920030353', '1010305002000033', 'b1', '1', '7400', '2017-09-20'),
-('20170920030353', '1010302004000007', 'b1', '500', '7400', '2017-09-20'),
-('20170920030353', '1010301006000003', 'b1', '2', '7400', '2017-09-20'),
-('20170920030353', '1010301006000002', 'b1', '5', '7400', '2017-09-20'),
-('20170920030353', '1010301003000005', 'b1', '1', '7400', '2017-09-20'),
-('20170920030353', '1010301003000002', 'b1', '1', '7400', '2017-09-20'),
 ('20170918032234', '1010306010000003', 'b1', '2', '7400', '2017-09-18'),
 ('20170918032234', '1010305002000033', 'b1', '2', '7400', '2017-09-18'),
 ('20170918032234', '1010302001000009', 'b1', '1', '7400', '2017-09-18'),
@@ -14478,54 +14325,15 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170913034304', '1010302001000009', 'b1', '1', '7400', '2017-09-13'),
 ('20170913034304', '1010301010000012', 'b1', '1', '7400', '2017-09-13'),
 ('20170913034304', '1010301006000013', 'b1', '1', '7400', '2017-09-13'),
-('20171017005208', '1010301006000038', 'b1', '2', '7400', '2017-10-17'),
-('20171017005208', '1010301006000004', 'b1', '12', '7400', '2017-10-17'),
-('20171017005208', '1010301008000003', 'b1', '1', '7400', '2017-10-17'),
-('20171017005208', '1010301001000020', 'b1', '1', '7400', '2017-10-17'),
-('20171017005208', '1010306005000007', 'b1', '2', '7400', '2017-10-17'),
-('20171017005208', '1010306010000002', 'b1', '1', '7400', '2017-10-17'),
-('20171017005208', '1010305999000035', 'b1', '1', '7400', '2017-10-17'),
-('20171017005208', '1010301001000016', 'b1', '6', '7400', '2017-10-17'),
-('20171017005208', '1010301006000037', 'b1', '24', '7400', '2017-10-17'),
-('20171017005208', '1010301001000005', 'b1', '2', '7400', '2017-10-17'),
-('20171017005208', '1010301003000005', 'b1', '3', '7400', '2017-10-17'),
-('20171017005208', '1010301003000018', 'b1', '2', '7400', '2017-10-17'),
-('20171017005208', '1010301001000033', 'b1', '3', '7400', '2017-10-17'),
-('20171017005208', '1010301001000021', 'b1', '1', '7400', '2017-10-17'),
-('20171017005208', '1010301010000012', 'b1', '2', '7400', '2017-10-17'),
-('20171017005208', '1010301006000039', 'b1', '2', '7400', '2017-10-17'),
-('20171017005208', '1010301006000012', 'b1', '2', '7400', '2017-10-17'),
-('20171017005208', '1010301003000029', 'b1', '1', '7400', '2017-10-17'),
-('20171017005208', '1010301011000002', 'b1', '1', '7400', '2017-10-17'),
 ('20171017061217', '1010306010000003', 'b6', '2', '7400', '2017-10-17'),
 ('20171016061449', '1010304002000005', 'b6', '1', '7400', '2017-10-16'),
 ('20171016061449', '1010304006000002', 'b6', '1', '7400', '2017-10-16'),
 ('20171016062555', '1010302004000009', 'b1', '10', '7400', '2017-10-16'),
-('20171016005041', '1010301003000005', 'b4', '12', '7400', '2017-10-16'),
-('20171016005041', '1010301011000002', 'b4', '1', '7400', '2017-10-16'),
-('20171016005041', '1010302001000009', 'b4', '1', '7400', '2017-10-16'),
-('20171016005041', '1010301011000001', 'b4', '1', '7400', '2017-10-16'),
-('20171016005041', '1010301003000001', 'b4', '2', '7400', '2017-10-16'),
-('20171016005041', '1010301003000002', 'b4', '4', '7400', '2017-10-16'),
 ('20171016005231', '1010305999900004', 'b1', '1', '7400', '2017-10-16'),
 ('20171016005231', '1010301006000004', 'b1', '1', '7400', '2017-10-16'),
-('20171016005623', '1010302001000009', 'b3', '5', '7400', '2017-10-16'),
-('20171016005623', '1010305999000035', 'b3', '1', '7400', '2017-10-16'),
-('20171016005623', '1010305999900004', 'b3', '5', '7400', '2017-10-16'),
-('20171016005623', '1010301001000008', 'b3', '3', '7400', '2017-10-16'),
-('20171013010253', '1010301011000002', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010301003000002', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010305012000008', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010301005000014', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010301008008005', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010301008000005', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010305999900004', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010305008000007', 'b1', '1', '7400', '2017-10-13'),
-('20171013010253', '1010302001000009', 'b1', '1', '7400', '2017-10-13'),
 ('20171013010856', '1010302001000009', 'b6', '5', '7400', '2017-10-13'),
 ('20171013010856', '1010301010000021', 'b6', '1', '7400', '2017-10-13'),
 ('20171013010856', '1010305999900004', 'b6', '2', '7400', '2017-10-13'),
-('20171010012409', '1010301006000012', 'b4', '1', '7400', '2017-10-10'),
 ('20171010012759', '1010305999000028', 'b1', '1', '7400', '2017-10-10'),
 ('20171010012759', '1010305008000034', 'b1', '9', '7400', '2017-10-10'),
 ('20171010012759', '1010305008000015', 'b1', '1', '7400', '2017-10-10'),
@@ -14599,14 +14407,9 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171020021806', '1010302004000009', 'b1', '10', '7400', '2017-10-20'),
 ('20171020021806', '1010301001000003', 'b1', '2', '7400', '2017-10-20'),
 ('20171020021806', '1010301003000013', 'b1', '1', '7400', '2017-10-20'),
-('20171024022128', '1010306005000007', 'b1', '1', '7400', '2017-10-24'),
-('20171024022128', '1010302001000009', 'b1', '2', '7400', '2017-10-24'),
-('20171024022128', '1010301010000023', 'b1', '1', '7400', '2017-10-24'),
 ('20171024023232', '1010303002000009', 'b1', '1', '7400', '2017-10-24'),
 ('20171024023232', '1010304011000001', 'b1', '1', '7400', '2017-10-24'),
 ('20171024023232', '1010304002000001', 'b1', '1', '7400', '2017-10-24'),
-('20171024023816', '1010301003000018', 'b5', '1', '7400', '2017-10-24'),
-('20171024023816', '1010301001000016', 'b5', '2', '7400', '2017-10-24'),
 ('20171027024215', '1010304006000002', 'b6', '66', '7400', '2017-10-27'),
 ('20171027024824', '1010305012000021', 'b1', '1', '7400', '2017-10-27'),
 ('20171030065815', '1010301006000012', 'b1', '7', '7400', '2017-10-30'),
@@ -14618,7 +14421,8 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171030065815', '1010305002000038', 'b1', '2', '7400', '2017-10-30'),
 ('20171030065815', '1010302002200041', 'b1', '1', '7400', '2017-10-30'),
 ('20170908070801', '1010301001000008', 'b3', '4', '7400', '2017-09-08'),
-('20170908070801', '1010306001000004', 'b3', '1', '7400', '2017-09-08'),
+('20170908070801', '1010306001000004', 'b3', '1', '7400', '2017-09-08');
+INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satker`, `tgl_keluar`) VALUES
 ('20170908070801', '1010301008008008', 'b3', '12', '7400', '2017-09-08'),
 ('20170908070801', '1010302001000010', 'b3', '1', '7400', '2017-09-08'),
 ('20170908070801', '1010305002000038', 'b3', '2', '7400', '2017-09-08'),
@@ -14655,8 +14459,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170906075217', '1010301006000013', 'b2', '1', '7400', '2017-09-06'),
 ('20170906075217', '1010301003000026', 'b2', '1', '7400', '2017-09-06'),
 ('20170906075217', '1010301006000004', 'b2', '1', '7400', '2017-09-06'),
-('20171113014647', '1010302001000009', 'b1', '5', '7400', '2017-11-13'),
-('20171113014647', '1010303002000001', 'b1', '3', '7400', '2017-11-13'),
 ('20171110020023', '1010301008000003', 'b4', '1', '7400', '2017-11-10'),
 ('20171113065025', '1010301001000003', 'b1', '2', '7400', '2017-11-13'),
 ('20171113065025', '1010305999900004', 'b1', '2', '7400', '2017-11-13'),
@@ -14666,25 +14468,14 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171114070103', '1010302001000009', 'b1', '1', '7400', '2017-11-14'),
 ('20171114070103', '1010303002000009', 'b1', '1', '7400', '2017-11-14'),
 ('20171114070103', '1010303002000008', 'b1', '1', '7400', '2017-11-14'),
-('20171114073343', '1010305001000001', 'b1', '1', '7400', '2017-11-14'),
-('20171114073343', '1010305999000030', 'b1', '1', '7400', '2017-11-14'),
-('20171114073343', '1010302001000009', 'b1', '2', '7400', '2017-11-14'),
-('20171114073343', '1010301010000022', 'b1', '1', '7400', '2017-11-14'),
-('20171117002432', '1010305012000002', 'b1', '25', '7400', '2017-11-17'),
-('20171117002432', '1010305012000010', 'b1', '25', '7400', '2017-11-17'),
-('20171117002432', '1010305013000002', 'b1', '2', '7400', '2017-11-17'),
 ('20171127002731', '1010305999000001', 'b1', '14', '7400', '2017-11-27'),
 ('20171127002731', '1010305013000002', 'b1', '1', '7400', '2017-11-27'),
 ('20171127002731', '1010305001000003', 'b1', '1', '7400', '2017-11-27'),
 ('20171113010431', '1010306010000002', 'b6', '18', '7400', '2017-11-13'),
 ('20171113010431', '1010305012000008', 'b6', '8', '7400', '2017-11-13'),
 ('20171113010431', '1010305999900004', 'b6', '1', '7400', '2017-11-13'),
-('20171114010938', '1010301003000018', 'b3', '1', '7400', '2017-11-14'),
-('20171114010938', '1010301006000004', 'b3', '5', '7400', '2017-11-14'),
-('20171114010938', '1010301003000016', 'b3', '1', '7400', '2017-11-14'),
 ('20171106011531', '1010305999900004', 'b1', '2', '7400', '2017-11-06'),
 ('20171106011531', '1010302002200041', 'b1', '1', '7400', '2017-11-06'),
-('20171115011920', '1010304006000017', 'b4', '1', '7400', '2017-11-15'),
 ('20171113012043', '1010301001000003', 'b1', '1', '7400', '2017-11-13'),
 ('20171113012043', '1010305002000010', 'b1', '1', '7400', '2017-11-13'),
 ('20171108012117', '1010302004000009', 'b1', '50', '7400', '2017-11-08'),
@@ -14695,11 +14486,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171106012646', '1010301006000004', 'b4', '1', '7400', '2017-11-06'),
 ('20171106013007', '1010302004000007', 'b6', '100', '7400', '2017-11-06'),
 ('20171106013007', '1010301011000002', 'b6', '1', '7400', '2017-11-06'),
-('20171106065714', '1010302001000009', 'b3', '2', '7400', '2017-11-06'),
-('20171106065714', '1010305012000012', 'b3', '1', '7400', '2017-11-06'),
-('20171106065714', '1010301003000005', 'b3', '1', '7400', '2017-11-06'),
-('20171106065714', '1010301003000016', 'b3', '1', '7400', '2017-11-06'),
-('20171106065714', '1010305999900004', 'b3', '1', '7400', '2017-11-06'),
 ('20171106070018', '1010305999900004', 'b4', '1', '7400', '2017-11-06'),
 ('20171106070018', '1010301001000003', 'b4', '1', '7400', '2017-11-06'),
 ('20171101070356', '1010301001000003', 'b4', '13', '7400', '2017-11-01'),
@@ -14726,10 +14512,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171030074005', '1010302004000007', 'b1', '100', '7400', '2017-10-30'),
 ('20171030074347', '1010305002000037', 'b1', '1', '7400', '2017-10-30'),
 ('20171030074347', '1010305001000001', 'b1', '1', '7400', '2017-10-30'),
-('20171128074526', '1010305999900004', 'b3', '7', '7400', '2017-11-28'),
-('20171128074526', '1010302001000009', 'b3', '2', '7400', '2017-11-28'),
-('20171128004933', '1010303002000001', 'b4', '3', '7400', '2017-11-28'),
-('20171128004933', '1010301001000003', 'b4', '5', '7400', '2017-11-28'),
 ('20171124005226', '1010304010000001', 'b2', '1', '7400', '2017-11-24'),
 ('20171121005706', '1010302004000011', 'b6', '100', '7400', '2017-11-21'),
 ('20171121005706', '1010305999900004', 'b6', '1', '7400', '2017-11-21'),
@@ -14738,7 +14520,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171121005706', '1010301011000002', 'b6', '1', '7400', '2017-11-21'),
 ('20171121005706', '1010301001000021', 'b6', '2', '7400', '2017-11-21'),
 ('20171121005706', '1010306010000002', 'b6', '2', '7400', '2017-11-21'),
-('20171120005948', '1010303002000001', 'b4', '1', '7400', '2017-11-20'),
 ('20171115012306', '1010305002000006', 'b1', '1', '7400', '2017-11-15'),
 ('20171115012306', '1010305002000002', 'b1', '1', '7400', '2017-11-15'),
 ('20171115012306', '1010301006000004', 'b1', '3', '7400', '2017-11-15'),
@@ -14748,11 +14529,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171115013457', '1010301003000013', 'b3', '1', '7400', '2017-11-15'),
 ('20171115013457', '1010301003000018', 'b3', '1', '7400', '2017-11-15'),
 ('20171115013457', '1010305001000019', 'b3', '1', '7400', '2017-11-15'),
-('20171121000242', '1010301001000021', 'b5', '1', '7400', '2017-11-21'),
-('20171121000242', '1010301001000003', 'b5', '1', '7400', '2017-11-21'),
-('20171121000242', '1010303002000001', 'b5', '2', '7400', '2017-11-21'),
-('20171121000242', '1010301004000006', 'b5', '1', '7400', '2017-11-21'),
-('20171121000242', '1010301999000002', 'b5', '1', '7400', '2017-11-21'),
 ('20171128000802', '1010305999900004', 'b1', '2', '7400', '2017-11-28'),
 ('20171130001042', '1010301999000001', 'b3', '4', '7400', '2017-11-30'),
 ('20171130001042', '1010301999000002', 'b3', '5', '7400', '2017-11-30'),
@@ -14767,11 +14543,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171128001558', '1010306003000005', 'b1', '1', '7400', '2017-11-28'),
 ('20171128001558', '1010306005000004', 'b1', '1', '7400', '2017-11-28'),
 ('20171128001558', '1010301010000021', 'b1', '1', '7400', '2017-11-28'),
-('20171128002043', '1010301001000034', 'b1', '4', '7400', '2017-11-28'),
-('20171128002043', '1010301001000006', 'b1', '1', '7400', '2017-11-28'),
-('20171128002043', '1010301010000013', 'b1', '1', '7400', '2017-11-28'),
-('20171128002043', '1010301004000006', 'b1', '1', '7400', '2017-11-28'),
-('20171128002043', '1010301010000011', 'b1', '1', '7400', '2017-11-28'),
 ('20171107002350', '1010305008000015', 'b1', '3', '7400', '2017-11-07'),
 ('20171107002350', '1010305004000026', 'b1', '3', '7400', '2017-11-07'),
 ('20171205065650', '1010301001000002', 'b3', '2', '7400', '2017-12-05'),
@@ -14779,11 +14550,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171205065650', '1010306010000003', 'b3', '6', '7400', '2017-12-05'),
 ('20171205065948', '1010302001000009', 'b1', '1', '7400', '2017-12-05'),
 ('20171205065948', '1010301001000002', 'b1', '7', '7400', '2017-12-05'),
-('20171205070236', '1010301010000011', 'b6', '1', '7400', '2017-12-05'),
-('20171205070236', '1010301010000015', 'b6', '1', '7400', '2017-12-05'),
-('20171205070236', '1010301003000016', 'b6', '1', '7400', '2017-12-05'),
-('20171205070236', '1010301005000002', 'b6', '1', '7400', '2017-12-05'),
-('20171205070236', '1010301010000003', 'b6', '1', '7400', '2017-12-05'),
 ('20171204070655', '1010302004000011', 'b4', '100', '7400', '2017-12-04'),
 ('20171204070655', '1010305002000006', 'b4', '1', '7400', '2017-12-04'),
 ('20171204070655', '1010301010000005', 'b4', '1', '7400', '2017-12-04'),
@@ -14826,44 +14592,12 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171130075711', '1010302004000011', 'b1', '500', '7400', '2017-11-30'),
 ('20171130075711', '1010301006000004', 'b1', '10', '7400', '2017-11-30'),
 ('20171130075711', '1010301003000018', 'b1', '2', '7400', '2017-11-30'),
-('20171130014639', '1010305002000006', 'b1', '30', '7400', '2017-11-30'),
-('20171130014639', '1010301001000002', 'b1', '12', '7400', '2017-11-30'),
-('20171130014639', '1010301001000001', 'b1', '12', '7400', '2017-11-30'),
-('20171130014639', '1010301003000023', 'b1', '3', '7400', '2017-11-30'),
-('20171130014639', '1010305008000007', 'b1', '4', '7400', '2017-11-30'),
-('20171130014639', '1010301008008005', 'b1', '3', '7400', '2017-11-30'),
-('20171130014639', '1010305999000003', 'b1', '3', '7400', '2017-11-30'),
-('20171130014639', '1010305008000031', 'b1', '4', '7400', '2017-11-30'),
-('20171130014639', '1010305008000028', 'b1', '4', '7400', '2017-11-30'),
-('20171130014639', '1010301001000024', 'b1', '2', '7400', '2017-11-30'),
-('20171130014639', '1010301010000003', 'b1', '12', '7400', '2017-11-30'),
-('20171130014639', '1010301010000004', 'b1', '12', '7400', '2017-11-30'),
-('20171130014639', '1010305002000010', 'b1', '3', '7400', '2017-11-30'),
-('20171130014639', '1010306999000002', 'b1', '2', '7400', '2017-11-30'),
-('20171130014639', '1010305013000002', 'b1', '2', '7400', '2017-11-30'),
-('20171130014639', '1010302001000002', 'b1', '5', '7400', '2017-11-30'),
-('20171130014639', '1010305999900004', 'b1', '5', '7400', '2017-11-30'),
-('20171130014639', '1010306002000020', 'b1', '16', '7400', '2017-11-30'),
 ('20171129014948', '1010301001000024', 'b5', '1', '7400', '2017-11-29'),
 ('20171129014948', '1010301001000021', 'b5', '1', '7400', '2017-11-29'),
 ('20171129014948', '1010302001000009', 'b5', '2', '7400', '2017-11-29'),
 ('20171129015104', '1010301006000004', 'b1', '12', '7400', '2017-11-29'),
 ('20171129015104', '1010305999900004', 'b1', '3', '7400', '2017-11-29'),
 ('20171129015652', '1010301001000002', 'b1', '1', '7400', '2017-11-29'),
-('20171128012805', '1010301999000001', 'b2', '4', '7400', '2017-11-28'),
-('20171128012805', '1010301999000002', 'b2', '5', '7400', '2017-11-28'),
-('20171120013519', '1010307001000002', 'b1', '5', '7400', '2017-11-20'),
-('20171120013519', '1010302002000003', 'b1', '1', '7400', '2017-11-20'),
-('20171120013519', '1010302001000001', 'b1', '5', '7400', '2017-11-20'),
-('20171120013519', '1010302001000002', 'b1', '5', '7400', '2017-11-20'),
-('20171120013519', '1010301006000012', 'b1', '12', '7400', '2017-11-20'),
-('20171120013519', '1010301006000035', 'b1', '3', '7400', '2017-11-20'),
-('20171120013519', '1010301010000021', 'b1', '3', '7400', '2017-11-20'),
-('20171120013519', '1010301010000004', 'b1', '6', '7400', '2017-11-20'),
-('20171120013519', '1010301010000003', 'b1', '6', '7400', '2017-11-20'),
-('20171120013519', '1010301005000014', 'b1', '1', '7400', '2017-11-20'),
-('20171120013519', '1010305002000002', 'b1', '15', '7400', '2017-11-20'),
-('20171120013519', '1010302001000010', 'b1', '5', '7400', '2017-11-20'),
 ('20171128014043', '1010301999000001', 'b6', '4', '7400', '2017-11-28'),
 ('20171128014043', '1010301999000002', 'b6', '6', '7400', '2017-11-28'),
 ('20171120015832', '1010305009000007', 'b1', '2', '7400', '2017-11-20'),
@@ -14888,8 +14622,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171128020538', '1010301003000013', 'b6', '2', '7400', '2017-11-28'),
 ('20171128020538', '1010305999900004', 'b6', '2', '7400', '2017-11-28'),
 ('20171128021009', '1010301999000001', 'b4', '4', '7400', '2017-11-28'),
-('20171123021142', '1010304006000004', 'b2', '2', '7400', '2017-11-23'),
-('20171123021142', '1010304006000014', 'b2', '6', '7400', '2017-11-23'),
 ('20171123021346', '1010304006000003', 'b5', '5', '7400', '2017-11-23'),
 ('20171123021346', '1010304006000004', 'b5', '5', '7400', '2017-11-23'),
 ('20171123021459', '1010304006000014', 'b3', '2', '7400', '2017-11-23'),
@@ -14923,7 +14655,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171124052857', '1010301010000013', 'b1', '1', '7400', '2017-11-24'),
 ('20171205053731', '1010306010000018', 'b1', '5', '7400', '2017-12-05'),
 ('20171205053731', '1010301001000008', 'b1', '1', '7400', '2017-12-05'),
-('20171213060457', '1010302001000009', 'b1', '5', '7400', '2017-12-13'),
 ('20171213060730', '1010305012000009', 'b1', '1', '7400', '2017-12-13'),
 ('20171213061336', '1010305012000009', 'b1', '3', '7400', '2017-12-13'),
 ('20171213061336', '1010305012000010', 'b1', '3', '7400', '2017-12-13'),
@@ -14933,9 +14664,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171213061336', '1010301001000024', 'b1', '2', '7400', '2017-12-13'),
 ('20171213061336', '1010301003000005', 'b1', '12', '7400', '2017-12-13'),
 ('20171213061336', '1010301003000016', 'b1', '1', '7400', '2017-12-13'),
-('20171213061614', '1010305012000009', 'b5', '2', '7400', '2017-12-13'),
-('20171213061614', '1010305012000010', 'b5', '2', '7400', '2017-12-13'),
-('20171213061614', '1010306010000003', 'b5', '6', '7400', '2017-12-13'),
 ('20171213061810', '1010306010000002', 'b4', '6', '7400', '2017-12-13'),
 ('20171213061810', '1010305999900004', 'b4', '2', '7400', '2017-12-13'),
 ('20171213061810', '1010305012000009', 'b4', '3', '7400', '2017-12-13'),
@@ -14964,7 +14692,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171002065048', '1010302004000008', 'b1', '500', '7400', '2017-10-02'),
 ('20171002065048', '1010302004000009', 'b1', '400', '7400', '2017-10-02'),
 ('20171002065048', '1010302004000002', 'b1', '100', '7400', '2017-10-02'),
-('20171213005013', '1010305012000009', 'b2', '1', '7400', '2017-12-13'),
 ('20171215010434', '1010304010000001', 'b1', '1', '7400', '2017-12-15'),
 ('20171215010625', '1010301008000004', 'b1', '1', '7400', '2017-12-15'),
 ('20171215010625', '1010301003000013', 'b1', '1', '7400', '2017-12-15'),
@@ -14983,21 +14710,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170918072823', '1010304006000002', 'b1', '2', '7400', '2017-09-18'),
 ('20170918072823', '1010301006000004', 'b1', '2', '7400', '2017-09-18'),
 ('20170918072823', '1010305002000038', 'b1', '2', '7400', '2017-09-18'),
-('20170905010239', '1010305008000028', 'b1', '6', '7400', '2017-09-05'),
-('20170905010239', '1010301010000003', 'b1', '2', '7400', '2017-09-05'),
-('20170905010239', '1010302004000009', 'b1', '100', '7400', '2017-09-05'),
-('20170905010239', '1010301006000036', 'b1', '2', '7400', '2017-09-05'),
-('20170905010239', '1010305008000007', 'b1', '2', '7400', '2017-09-05'),
-('20170905010239', '1010305001000014', 'b1', '1', '7400', '2017-09-05'),
-('20170905010239', '1010301006000004', 'b1', '2', '7400', '2017-09-05'),
-('20170905010239', '1010301006000039', 'b1', '12', '7400', '2017-09-05'),
-('20170905010239', '1010301001000003', 'b1', '12', '7400', '2017-09-05'),
-('20170905010239', '1010305002000006', 'b1', '20', '7400', '2017-09-05'),
-('20170905010239', '1010302004000008', 'b1', '100', '7400', '2017-09-05'),
-('20170905010239', '1010305999900004', 'b1', '8', '7400', '2017-09-05'),
-('20170905010239', '1010301003000002', 'b1', '2', '7400', '2017-09-05'),
-('20170905010239', '1010301006000010', 'b1', '1', '7400', '2017-09-05'),
-('20170905010239', '1010301001000021', 'b1', '1', '7400', '2017-09-05'),
 ('20170711023422', '1010302001000010', 'b3', '1', '7400', '2017-07-11'),
 ('20170711023422', '1010306010000002', 'b3', '6', '7400', '2017-07-11'),
 ('20170711023422', '1010301007000006', 'b3', '1', '7400', '2017-07-11'),
@@ -15062,11 +14774,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171121052104', '1010305999000003', 'b1', '4', '7400', '2017-11-21'),
 ('20171121052104', '1010301999000001', 'b1', '2', '7400', '2017-11-21'),
 ('20171121052104', '1010301010000021', 'b1', '1', '7400', '2017-11-21'),
-('20171207071545', '1010302001000009', 'b1', '2', '7400', '2017-12-07'),
-('20171207071545', '1010301010000021', 'b1', '4', '7400', '2017-12-07'),
-('20171207071545', '1010301010000003', 'b1', '1', '7400', '2017-12-07'),
-('20171207071545', '1010305999000003', 'b1', '3', '7400', '2017-12-07'),
-('20171207071545', '1010302002200041', 'b1', '2', '7400', '2017-12-07'),
 ('20180126065013', '1010301003000002', 'b1', '1', '7400', '2018-01-26'),
 ('20180111065255', '1010301006000010', 'b1', '4', '7400', '2018-01-11'),
 ('20180111065255', '1010301010000015', 'b1', '1', '7400', '2018-01-11'),
@@ -15112,8 +14819,7 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20180104011903', '1010305008000031', 'b1', '1', '7400', '2018-01-04'),
 ('20180104011903', '1010307004000001', 'b1', '1', '7400', '2018-01-04'),
 ('20180104011903', '1010305008000002', 'b1', '1', '7400', '2018-01-04'),
-('20180104011903', '1010305008000015', 'b1', '1', '7400', '2018-01-04');
-INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satker`, `tgl_keluar`) VALUES
+('20180104011903', '1010305008000015', 'b1', '1', '7400', '2018-01-04'),
 ('20180104011903', '1010301005000014', 'b1', '3', '7400', '2018-01-04'),
 ('20180105012232', '1010305012000008', 'b2', '3', '7400', '2018-01-05'),
 ('20180105012232', '1010306010000002', 'b2', '6', '7400', '2018-01-05'),
@@ -15174,25 +14880,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170712024532', '1010301011000006', 'b4', '4', '7400', '2017-07-12'),
 ('20170712024532', '1010302999000002', 'b4', '4', '7400', '2017-07-12'),
 ('20170712024532', '1010301008008005', 'b4', '4', '7400', '2017-07-12'),
-('20170503013310', '1010302002000039', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301001000005', 'b5', '3', '7400', '2017-05-03'),
-('20170503013310', '1010301004000008', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301006000004', 'b5', '20', '7400', '2017-05-03'),
-('20170503013310', '1010301001000034', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010302001000010', 'b5', '4', '7400', '2017-05-03'),
-('20170503013310', '1010301003000016', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301999000012', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301003000001', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301006000037', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301001000016', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301003000012', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301003000017', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301008008008', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301010000012', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301001000008', 'b5', '2', '7400', '2017-05-03'),
-('20170503013310', '1010301003000015', 'b5', '1', '7400', '2017-05-03'),
-('20170503013310', '1010301006000029', 'b5', '3', '7400', '2017-05-03'),
-('20170503013310', '1010307007000071', 'b5', '1', '7400', '2017-05-03'),
 ('20170602014506', '1010301001000005', 'b4', '4', '7400', '2017-06-02'),
 ('20170602014506', '1010301006000037', 'b4', '2', '7400', '2017-06-02'),
 ('20170602014506', '1010301003000002', 'b4', '1', '7400', '2017-06-02'),
@@ -15278,9 +14965,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171211065828', '1010303002000007', 'b4', '1', '7400', '2017-12-11'),
 ('20171204070415', '1010301006000007', 'b6', '2', '7400', '2017-12-04'),
 ('20171204070415', '1010302001000009', 'b6', '10', '7400', '2017-12-04'),
-('20171114013347', '1010302001000009', 'b5', '9', '7400', '2017-11-14'),
-('20171114013347', '1010305002000006', 'b5', '2', '7400', '2017-11-14'),
-('20171009062822', '1010301001000020', 'b6', '5', '7400', '2017-10-09'),
 ('20180122063009', '1010302001000010', 'b1', '1', '7400', '2018-01-22'),
 ('20180122063009', '1010306005000007', 'b1', '1', '7400', '2018-01-22'),
 ('20180122063009', '1010301999999005', 'b1', '1', '7400', '2018-01-22'),
@@ -15363,16 +15047,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170712231856', '1010302004000009', 'b4', '22', '7400', '2017-07-12'),
 ('20170712231856', '1010304006000002', 'b4', '30', '7400', '2017-07-12'),
 ('20170712231856', '1010302004000008', 'b4', '12', '7400', '2017-07-12'),
-('20171031013226', '1010301008000005', 'b1', '4', '7400', '2017-10-31'),
-('20171031013226', '1010306005000004', 'b1', '5', '7400', '2017-10-31'),
-('20171031013226', '1010305999900004', 'b1', '2', '7400', '2017-10-31'),
-('20171031013226', '1010301001000003', 'b1', '12', '7400', '2017-10-31'),
-('20171031013226', '1010306001000007', 'b1', '30', '7400', '2017-10-31'),
-('20171031013226', '1010306002000020', 'b1', '5', '7400', '2017-10-31'),
-('20171031013226', '1010301010000004', 'b1', '2', '7400', '2017-10-31'),
-('20171031013226', '1010301003000001', 'b1', '1', '7400', '2017-10-31'),
-('20171031013226', '1010306003000005', 'b1', '5', '7400', '2017-10-31'),
-('20171031013226', '1010305002000037', 'b1', '2', '7400', '2017-10-31'),
 ('20170713025929', '1010301001000016', 'b1', '2', '7400', '2017-07-13'),
 ('20170713025929', '1010302004000009', 'b1', '90', '7400', '2017-07-13'),
 ('20170713025929', '1010304010000001', 'b1', '1', '7400', '2017-07-13'),
@@ -15449,7 +15123,8 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171211070726', '1010303002000007', 'b5', '2', '7400', '2017-12-11'),
 ('20171211061924', '1010301002000009', 'b3', '6', '7400', '2017-12-11'),
 ('20171211061924', '1010301011000004', 'b3', '3', '7400', '2017-12-11'),
-('20171211061924', '1010301010000003', 'b3', '1', '7400', '2017-12-11'),
+('20171211061924', '1010301010000003', 'b3', '1', '7400', '2017-12-11');
+INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satker`, `tgl_keluar`) VALUES
 ('20171211061924', '1010303002000001', 'b3', '2', '7400', '2017-12-11'),
 ('20171211061924', '1010303002000008', 'b3', '1', '7400', '2017-12-11'),
 ('20171211061924', '1010302001000010', 'b3', '8', '7400', '2017-12-11'),
@@ -15530,24 +15205,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171130013152', '1010302002000003', 'b1', '1', '7400', '2017-11-30'),
 ('20171130013152', '1010305002000035', 'b1', '4', '7400', '2017-11-30'),
 ('20171220004238', '1010305008000002', 'b1', '1', '7400', '2017-12-20'),
-('20170721005431', '1010305008000028', 'b1', '2', '7400', '2017-07-21'),
-('20170721005431', '1010301001000016', 'b1', '4', '7400', '2017-07-21'),
-('20170721005431', '1010302001000002', 'b1', '1', '7400', '2017-07-21'),
-('20170721005431', '1010305999000035', 'b1', '2', '7400', '2017-07-21'),
-('20170721005431', '1010305004000023', 'b1', '1', '7400', '2017-07-21'),
-('20170721005431', '1010305001000001', 'b1', '3', '7400', '2017-07-21'),
-('20170721005431', '1010306010000003', 'b1', '12', '7400', '2017-07-21'),
-('20170721005431', '1010302001000009', 'b1', '3', '7400', '2017-07-21'),
-('20170721005431', '1010306010000002', 'b1', '12', '7400', '2017-07-21'),
-('20170721005431', '1010305008000015', 'b1', '1', '7400', '2017-07-21'),
-('20170721005431', '1010305008000007', 'b1', '1', '7400', '2017-07-21'),
-('20170721005431', '1010301001000007', 'b1', '12', '7400', '2017-07-21'),
-('20170721005431', '1010301010000004', 'b1', '6', '7400', '2017-07-21'),
-('20170721005431', '1010306999000002', 'b1', '3', '7400', '2017-07-21'),
-('20170721005431', '1010301010000012', 'b1', '2', '7400', '2017-07-21'),
-('20170721005431', '1010302001000001', 'b1', '2', '7400', '2017-07-21'),
-('20170721005431', '1010301010000003', 'b1', '6', '7400', '2017-07-21'),
-('20170721005431', '1010305012000008', 'b1', '5', '7400', '2017-07-21'),
 ('20170922030541', '1010305008000029', 'b1', '2', '7400', '2017-09-22'),
 ('20170922030541', '1010301005000002', 'b1', '1', '7400', '2017-09-22'),
 ('20170922030541', '1010305008000005', 'b1', '14', '7400', '2017-09-22'),
@@ -15581,14 +15238,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170703010057', '1010305008000031', 'b1', '7', '7400', '2017-07-03'),
 ('20170703010057', '1010305002000006', 'b1', '20', '7400', '2017-07-03'),
 ('20170703010057', '1010305004000023', 'b1', '1', '7400', '2017-07-03'),
-('20171218050617', '1010305008000007', 'b1', '1', '7400', '2017-12-18'),
-('20171218050617', '1010305002000012', 'b1', '1', '7400', '2017-12-18'),
-('20171218050617', '1010301010000003', 'b1', '1', '7400', '2017-12-18'),
-('20171218050617', '1010305008000015', 'b1', '2', '7400', '2017-12-18'),
-('20171218050617', '1010305003000004', 'b1', '3', '7400', '2017-12-18'),
-('20171218050617', '1010305002000038', 'b1', '2', '7400', '2017-12-18'),
-('20171218050617', '1010305999000003', 'b1', '1', '7400', '2017-12-18'),
-('20171218050617', '1010305008000031', 'b1', '15', '7400', '2017-12-18'),
 ('20170109064239', '1010301001000009', 'b1', '2', '7400', '2017-01-09'),
 ('20170109064239', '1010301005000008', 'b1', '6', '7400', '2017-01-09'),
 ('20170109064239', '1010302004000008', 'b1', '28', '7400', '2017-01-09'),
@@ -15634,18 +15283,6 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170526010405', '1010301001000016', 'b1', '1', '7400', '2017-05-26'),
 ('20170526010405', '1010306010000003', 'b1', '16', '7400', '2017-05-26'),
 ('20170526010405', '1010301003000002', 'b1', '1', '7400', '2017-05-26'),
-('20170828072109', '1010305008000007', 'b1', '2', '7400', '2017-08-28'),
-('20170828072109', '1010301003000002', 'b1', '2', '7400', '2017-08-28'),
-('20170828072109', '1010301010000011', 'b1', '1', '7400', '2017-08-28'),
-('20170828072109', '1010305008000005', 'b1', '15', '7400', '2017-08-28'),
-('20170828072109', '1010301003000013', 'b1', '1', '7400', '2017-08-28'),
-('20170828072109', '1010306999000002', 'b1', '4', '7400', '2017-08-28'),
-('20170828072109', '1010301008000005', 'b1', '1', '7400', '2017-08-28'),
-('20170828072109', '1010305002000006', 'b1', '1', '7400', '2017-08-28'),
-('20170828072109', '1010301003000018', 'b1', '1', '7400', '2017-08-28'),
-('20170828072109', '1010306010000003', 'b1', '20', '7400', '2017-08-28'),
-('20170828072109', '1010305002000023', 'b1', '1', '7400', '2017-08-28'),
-('20170828072109', '1010305004000023', 'b1', '1', '7400', '2017-08-28'),
 ('20170904044745', '1010306010000003', 'b1', '2', '7400', '2017-09-04'),
 ('20170904044745', '1010305006000001', 'b1', '1', '7400', '2017-09-04'),
 ('20170904044745', '1010301001000003', 'b1', '2', '7400', '2017-09-04'),
@@ -15708,8 +15345,170 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20171114005102', '1010302003000001', 'b1', '80', '7400', '2017-11-14'),
 ('20171114005102', '1010306010000002', 'b1', '36', '7400', '2017-11-14'),
 ('20171114005102', '1010301010000013', 'b1', '2', '7400', '2017-11-14'),
+('20170728014026', '1010301003000002', 'b1', '3', '7400', '2017-07-28'),
+('20170728014026', '1010305008000034', 'b1', '5', '7400', '2017-07-28'),
+('20170728014026', '1010302004000008', 'b1', '100', '7400', '2017-07-28'),
+('20170728014026', '1010301011000006', 'b1', '3', '7400', '2017-07-28'),
+('20170728014026', '1010302001000001', 'b1', '1', '7400', '2017-07-28'),
+('20170728014026', '1010306010000002', 'b1', '6', '7400', '2017-07-28'),
+('20170728014026', '1010301003000001', 'b1', '1', '7400', '2017-07-28'),
+('20170728014026', '1010301006000039', 'b1', '10', '7400', '2017-07-28'),
+('20170728014026', '1010302001000009', 'b1', '1', '7400', '2017-07-28'),
+('20170728014026', '1010302004000009', 'b1', '100', '7400', '2017-07-28'),
+('20170728014026', '1010305004000023', 'b1', '10', '7400', '2017-07-28'),
+('20170728014026', '1010305002000006', 'b1', '20', '7400', '2017-07-28'),
+('20170728014026', '1010305002000033', 'b1', '5', '7400', '2017-07-28'),
+('20170728014026', '1010301010000013', 'b1', '2', '7400', '2017-07-28'),
+('20170117070057', '1010301001000016', 'b1', '1', '7400', '2017-01-17'),
+('20170117070057', '1010301006000004', 'b1', '2', '7400', '2017-01-17'),
+('20170117070057', '1010301003000012', 'b1', '1', '7400', '2017-01-17'),
+('20170117070057', '1010301005000014', 'b1', '2', '7400', '2017-01-17'),
+('20170117070057', '1010301006000012', 'b1', '4', '7400', '2017-01-17'),
+('20170117070057', '1010301006000001', 'b1', '10', '7400', '2017-01-17'),
+('20170119004904', '1010301005000014', 'b1', '2', '7400', '2017-01-19'),
+('20170201062900', '1010301011000005', 'b1', '1', '7400', '2017-02-01'),
+('20170201062900', '1010302001000009', 'b1', '3', '7400', '2017-02-01'),
+('20170201062900', '1010307007000066', 'b1', '1', '7400', '2017-02-01'),
+('20170201062900', '1010301005000014', 'b1', '2', '7400', '2017-02-01'),
+('20170201062900', '1010301001000016', 'b1', '1', '7400', '2017-02-01'),
+('20170201062900', '1010301001000036', 'b1', '1', '7400', '2017-02-01'),
+('20170201062900', '1010302001000002', 'b1', '2', '7400', '2017-02-01'),
+('20171013010253', '1010305008000007', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010302001000009', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010305999900004', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010301011000002', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010305012000008', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010301008000005', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010301008008005', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010301003000002', 'b1', '1', '7400', '2017-10-13'),
+('20171013010253', '1010301005000014', 'b1', '2', '7400', '2017-10-13'),
+('20170828072109', '1010305008000007', 'b1', '2', '7400', '2017-08-28'),
+('20170828072109', '1010301003000002', 'b1', '2', '7400', '2017-08-28'),
+('20170828072109', '1010301010000011', 'b1', '1', '7400', '2017-08-28'),
+('20170828072109', '1010305008000005', 'b1', '15', '7400', '2017-08-28'),
+('20170828072109', '1010301003000013', 'b1', '1', '7400', '2017-08-28'),
+('20170828072109', '1010306999000002', 'b1', '4', '7400', '2017-08-28'),
+('20170828072109', '1010301008000005', 'b1', '2', '7400', '2017-08-28'),
+('20170828072109', '1010305002000006', 'b1', '1', '7400', '2017-08-28'),
+('20170828072109', '1010301003000018', 'b1', '1', '7400', '2017-08-28'),
+('20170828072109', '1010306010000003', 'b1', '20', '7400', '2017-08-28'),
+('20170828072109', '1010305002000023', 'b1', '1', '7400', '2017-08-28'),
+('20170828072109', '1010305004000023', 'b1', '1', '7400', '2017-08-28'),
+('20170425060142', '1010306002000013', 'b1', '2', '7400', '2017-04-25'),
+('20170425060142', '1010301001000002', 'b1', '12', '7400', '2017-04-25'),
+('20170425060142', '1010305002000024', 'b1', '1', '7400', '2017-04-25'),
+('20170425060142', '1010301008008008', 'b1', '7', '7400', '2017-04-25'),
+('20170425060142', '1010301001000035', 'b1', '1', '7400', '2017-04-25'),
+('20170425060142', '1010305008000007', 'b1', '1', '7400', '2017-04-25'),
+('20170425060142', '1010301010000004', 'b1', '6', '7400', '2017-04-25'),
+('20170425060142', '1010305008000034', 'b1', '4', '7400', '2017-04-25'),
+('20170425060142', '1010305008000044', 'b1', '4', '7400', '2017-04-25'),
+('20170425060142', '1010301008000005', 'b1', '2', '7400', '2017-04-25'),
+('20170425060142', '1010301010000003', 'b1', '6', '7400', '2017-04-25'),
+('20170425060142', '1010301006000012', 'b1', '1', '7400', '2017-04-25'),
+('20170425060142', '1010305012000015', 'b1', '5', '7400', '2017-04-25'),
+('20170425060142', '1010305001000019', 'b1', '1', '7400', '2017-04-25'),
+('20170425060142', '1010305002000006', 'b1', '14', '7400', '2017-04-25'),
+('20170425060142', '1010305001000011', 'b1', '1', '7400', '2017-04-25'),
+('20170503013310', '1010302002000039', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301001000005', 'b5', '3', '7400', '2017-05-03'),
+('20170503013310', '1010301004000008', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301006000004', 'b5', '20', '7400', '2017-05-03'),
+('20170503013310', '1010301001000034', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010302001000010', 'b5', '4', '7400', '2017-05-03'),
+('20170503013310', '1010301003000016', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301999000012', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301003000001', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301006000037', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301001000016', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301003000012', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301003000017', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301008008008', 'b5', '3', '7400', '2017-05-03'),
+('20170503013310', '1010301010000012', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301001000008', 'b5', '2', '7400', '2017-05-03'),
+('20170503013310', '1010301003000015', 'b5', '1', '7400', '2017-05-03'),
+('20170503013310', '1010301006000029', 'b5', '3', '7400', '2017-05-03'),
+('20170503013310', '1010307007000071', 'b5', '1', '7400', '2017-05-03'),
+('20170508021045', '1010305002000033', 'b1', '1', '7400', '2017-05-08'),
+('20170508021045', '1010301008008008', 'b1', '5', '7400', '2017-05-08'),
+('20171120013519', '1010302001000010', 'b1', '5', '7400', '2017-11-20'),
+('20171120013519', '1010301010000003', 'b1', '6', '7400', '2017-11-20'),
+('20171120013519', '1010301006000035', 'b1', '3', '7400', '2017-11-20'),
+('20171120013519', '1010302001000001', 'b1', '5', '7400', '2017-11-20'),
+('20171120013519', '1010301006000012', 'b1', '12', '7400', '2017-11-20'),
+('20171120013519', '1010305002000002', 'b1', '15', '7400', '2017-11-20'),
+('20171120013519', '1010302001000002', 'b1', '5', '7400', '2017-11-20'),
+('20171120013519', '1010301005000014', 'b1', '1', '7400', '2017-11-20'),
+('20171120013519', '1010307001000002', 'b1', '5', '7400', '2017-11-20'),
+('20171120013519', '1010301010000004', 'b1', '6', '7400', '2017-11-20'),
+('20171120013519', '1010301010000021', 'b1', '1', '7400', '2017-11-20'),
+('20171120013519', '1010302002000003', 'b1', '1', '7400', '2017-11-20'),
+('20171024022128', '1010302001000009', 'b1', '2', '7400', '2017-10-24'),
+('20171024022128', '1010306005000007', 'b1', '1', '7400', '2017-10-24'),
+('20171024022128', '1010301010000023', 'b1', '4', '7400', '2017-10-24'),
+('20170928010811', '1010302001000009', 'b1', '1', '7400', '2017-09-28'),
+('20170928010811', '1010301006000004', 'b1', '5', '7400', '2017-09-28'),
+('20170928010811', '1010301010000023', 'b1', '2', '7400', '2017-09-28'),
+('20170131015739', '1010301003000015', 'b1', '2', '7400', '2017-01-31'),
+('20170131015739', '1010301010000004', 'b1', '1', '7400', '2017-01-31'),
+('20170131015739', '1010301005000008', 'b1', '3', '7400', '2017-01-31'),
+('20170131015739', '1010302001000001', 'b1', '2', '7400', '2017-01-31'),
+('20170131015739', '1010301010000003', 'b1', '1', '7400', '2017-01-31'),
+('20170131015739', '1010301003000019', 'b1', '1', '7400', '2017-01-31'),
+('20170131015739', '1010302001000009', 'b1', '2', '7400', '2017-01-31'),
+('20170131015739', '1010301999000011', 'b1', '1', '7400', '2017-01-31'),
+('20170131015739', '1010301010000005', 'b1', '1', '7400', '2017-01-31'),
+('20170131015739', '1010301006000027', 'b1', '1', '7400', '2017-01-31'),
+('20170222071920', '1010301006000012', 'b1', '2', '7400', '2017-02-22'),
+('20170227014117', '1010302001000001', 'b1', '2', '7400', '2017-02-27'),
+('20170721005431', '1010305008000028', 'b1', '2', '7400', '2017-07-21'),
+('20170721005431', '1010306010000003', 'b1', '12', '7400', '2017-07-21'),
+('20170721005431', '1010302001000009', 'b1', '3', '7400', '2017-07-21'),
+('20170721005431', '1010306010000002', 'b1', '12', '7400', '2017-07-21'),
+('20170721005431', '1010305008000015', 'b1', '1', '7400', '2017-07-21'),
+('20170721005431', '1010305001000001', 'b1', '3', '7400', '2017-07-21'),
+('20170721005431', '1010301001000007', 'b1', '12', '7400', '2017-07-21'),
+('20170721005431', '1010301010000004', 'b1', '4', '7400', '2017-07-21'),
+('20170721005431', '1010306999000002', 'b1', '3', '7400', '2017-07-21'),
+('20170721005431', '1010301010000012', 'b1', '2', '7400', '2017-07-21'),
+('20170721005431', '1010305008000007', 'b1', '1', '7400', '2017-07-21'),
+('20170721005431', '1010302001000001', 'b1', '2', '7400', '2017-07-21'),
+('20170721005431', '1010301010000003', 'b1', '6', '7400', '2017-07-21'),
+('20170721005431', '1010305012000008', 'b1', '5', '7400', '2017-07-21'),
+('20170721005431', '1010301001000016', 'b1', '4', '7400', '2017-07-21'),
+('20170721005431', '1010302001000002', 'b1', '1', '7400', '2017-07-21'),
+('20170721005431', '1010305999000035', 'b1', '2', '7400', '2017-07-21'),
+('20170721005431', '1010305004000023', 'b1', '1', '7400', '2017-07-21'),
+('20171130014639', '1010305008000028', 'b1', '4', '7400', '2017-11-30'),
+('20171130014639', '1010301001000002', 'b1', '12', '7400', '2017-11-30'),
+('20171130014639', '1010305002000006', 'b1', '30', '7400', '2017-11-30'),
+('20171130014639', '1010306999000002', 'b1', '2', '7400', '2017-11-30'),
+('20171130014639', '1010306002000020', 'b1', '16', '7400', '2017-11-30'),
+('20171130014639', '1010305008000007', 'b1', '4', '7400', '2017-11-30'),
+('20171130014639', '1010302001000002', 'b1', '5', '7400', '2017-11-30'),
+('20171130014639', '1010301003000023', 'b1', '3', '7400', '2017-11-30'),
+('20171130014639', '1010301008008005', 'b1', '3', '7400', '2017-11-30'),
+('20171130014639', '1010305013000002', 'b1', '2', '7400', '2017-11-30'),
+('20171130014639', '1010301001000024', 'b1', '2', '7400', '2017-11-30'),
+('20171130014639', '1010301010000004', 'b1', '12', '7400', '2017-11-30'),
+('20171130014639', '1010305999000003', 'b1', '3', '7400', '2017-11-30'),
+('20171130014639', '1010305002000010', 'b1', '3', '7400', '2017-11-30'),
+('20171130014639', '1010301001000001', 'b1', '12', '7400', '2017-11-30'),
+('20171130014639', '1010301010000003', 'b1', '12', '7400', '2017-11-30'),
+('20171130014639', '1010305008000031', 'b1', '4', '7400', '2017-11-30'),
+('20171130014639', '1010305999900004', 'b1', '5', '7400', '2017-11-30'),
+('20171031013226', '1010301008000005', 'b1', '4', '7400', '2017-10-31'),
+('20171031013226', '1010306005000004', 'b1', '5', '7400', '2017-10-31'),
+('20171031013226', '1010305999900004', 'b1', '2', '7400', '2017-10-31'),
+('20171031013226', '1010301001000003', 'b1', '12', '7400', '2017-10-31'),
+('20171031013226', '1010306001000007', 'b1', '30', '7400', '2017-10-31'),
+('20171031013226', '1010306002000020', 'b1', '5', '7400', '2017-10-31'),
+('20171031013226', '1010301010000004', 'b1', '12', '7400', '2017-10-31'),
+('20171031013226', '1010301003000001', 'b1', '1', '7400', '2017-10-31'),
+('20171031013226', '1010306003000005', 'b1', '5', '7400', '2017-10-31'),
+('20171031013226', '1010305002000037', 'b1', '2', '7400', '2017-10-31'),
 ('20170922013730', '1010305008000007', 'b1', '2', '7400', '2017-09-22'),
-('20170922013730', '1010301010000004', 'b1', '1', '7400', '2017-09-22'),
+('20170922013730', '1010301010000004', 'b1', '7', '7400', '2017-09-22'),
 ('20170922013730', '1010301006000004', 'b1', '20', '7400', '2017-09-22'),
 ('20170922013730', '1010302001000010', 'b1', '1', '7400', '2017-09-22'),
 ('20170922013730', '1010301010000003', 'b1', '1', '7400', '2017-09-22'),
@@ -15719,12 +15518,255 @@ INSERT INTO `trx_keluar` (`id_trx_k`, `kd_brg`, `id_bdg_sks`, `jumlah`, `id_satk
 ('20170922013730', '1010301010000021', 'b1', '1', '7400', '2017-09-22'),
 ('20170922013730', '1010301001000003', 'b1', '14', '7400', '2017-09-22'),
 ('20170922013730', '1010305002000033', 'b1', '8', '7400', '2017-09-22'),
-('20170922013730', '1010305008000015', 'b1', '2', '7400', '2017-09-22');
+('20170922013730', '1010305008000015', 'b1', '2', '7400', '2017-09-22'),
+('20171218050617', '1010305008000007', 'b1', '1', '7400', '2017-12-18'),
+('20171218050617', '1010305008000031', 'b1', '15', '7400', '2017-12-18'),
+('20171218050617', '1010301010000003', 'b1', '6', '7400', '2017-12-18'),
+('20171218050617', '1010305002000012', 'b1', '1', '7400', '2017-12-18'),
+('20171218050617', '1010305003000004', 'b1', '3', '7400', '2017-12-18'),
+('20171218050617', '1010305008000015', 'b1', '2', '7400', '2017-12-18'),
+('20171218050617', '1010305999000003', 'b1', '1', '7400', '2017-12-18'),
+('20171218050617', '1010305002000038', 'b1', '2', '7400', '2017-12-18'),
+('20171205070236', '1010301010000015', 'b6', '1', '7400', '2017-12-05'),
+('20171205070236', '1010301005000002', 'b6', '1', '7400', '2017-12-05'),
+('20171205070236', '1010301003000016', 'b6', '1', '7400', '2017-12-05'),
+('20171205070236', '1010301010000003', 'b6', '4', '7400', '2017-12-05'),
+('20171205070236', '1010301010000011', 'b6', '1', '7400', '2017-12-05'),
+('20171207071545', '1010302001000009', 'b1', '2', '7400', '2017-12-07'),
+('20171207071545', '1010301010000021', 'b1', '3', '7400', '2017-12-07'),
+('20171207071545', '1010301010000003', 'b1', '3', '7400', '2017-12-07'),
+('20171207071545', '1010305999000003', 'b1', '3', '7400', '2017-12-07'),
+('20171207071545', '1010302002200041', 'b1', '2', '7400', '2017-12-07'),
+('20170905010239', '1010305008000028', 'b1', '6', '7400', '2017-09-05'),
+('20170905010239', '1010305001000014', 'b1', '1', '7400', '2017-09-05'),
+('20170905010239', '1010301006000004', 'b1', '2', '7400', '2017-09-05'),
+('20170905010239', '1010301006000039', 'b1', '12', '7400', '2017-09-05'),
+('20170905010239', '1010305008000007', 'b1', '2', '7400', '2017-09-05'),
+('20170905010239', '1010305002000006', 'b1', '20', '7400', '2017-09-05'),
+('20170905010239', '1010302004000008', 'b1', '100', '7400', '2017-09-05'),
+('20170905010239', '1010305999900004', 'b1', '8', '7400', '2017-09-05'),
+('20170905010239', '1010301001000003', 'b1', '12', '7400', '2017-09-05'),
+('20170905010239', '1010301006000010', 'b1', '19', '7400', '2017-09-05'),
+('20170905010239', '1010301001000021', 'b1', '1', '7400', '2017-09-05'),
+('20170905010239', '1010301003000002', 'b1', '2', '7400', '2017-09-05'),
+('20170905010239', '1010302004000009', 'b1', '100', '7400', '2017-09-05'),
+('20170905010239', '1010301006000036', 'b1', '2', '7400', '2017-09-05'),
+('20161231081810', '1010301003000026', '00', '6', '7400', '2016-12-31'),
+('20170609013851', '1010302999000002', 'b1', '1', '7400', '2017-06-09'),
+('20170609013851', '1010301003000026', 'b1', '4', '7400', '2017-06-09'),
+('20170609013851', '1010301010000012', 'b1', '1', '7400', '2017-06-09'),
+('20170609015659', '1010301003000026', 'b5', '3', '7400', '2017-06-09'),
+('20170609015659', '1010301010000012', 'b5', '1', '7400', '2017-06-09'),
+('20170704013208', '1010301001000006', 'b1', '1', '7400', '2017-07-04'),
+('20170704013208', '1010301003000026', 'b1', '3', '7400', '2017-07-04'),
+('20170704013208', '1010305999900004', 'b1', '1', '7400', '2017-07-04'),
+('20170824075112', '1010301001000006', 'b1', '2', '7400', '2017-08-24'),
+('20170824075112', '1010305002000033', 'b1', '1', '7400', '2017-08-24'),
+('20170824075112', '1010305002000006', 'b1', '2', '7400', '2017-08-24'),
+('20170824075112', '1010301003000026', 'b1', '3', '7400', '2017-08-24'),
+('20170824075112', '1010302004000009', 'b1', '5', '7400', '2017-08-24'),
+('20170824075112', '1010301010000012', 'b1', '1', '7400', '2017-08-24'),
+('20170824075112', '1010302004000009', 'b1', '50', '7400', '2017-08-24'),
+('20170824075112', '1010301006000039', 'b1', '1', '7400', '2017-08-24'),
+('20171106065714', '1010301003000016', 'b3', '1', '7400', '2017-11-06'),
+('20171106065714', '1010305999900004', 'b3', '1', '7400', '2017-11-06'),
+('20171106065714', '1010302001000009', 'b3', '2', '7400', '2017-11-06'),
+('20171106065714', '1010305012000012', 'b3', '1', '7400', '2017-11-06'),
+('20171106065714', '1010301003000005', 'b3', '12', '7400', '2017-11-06'),
+('20170515011124', '1010301003000005', 'b4', '12', '7400', '2017-05-15'),
+('20170602015153', '1010301001000016', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301004000008', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301011000006', 'b4', '2', '7400', '2017-06-02'),
+('20170602015153', '1010301001000001', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301008008005', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301004000009', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301001000006', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301003000005', 'b4', '12', '7400', '2017-06-02'),
+('20170602015153', '1010301010000012', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301003000002', 'b4', '1', '7400', '2017-06-02'),
+('20170602015153', '1010301003000026', 'b4', '1', '7400', '2017-06-02'),
+('20170605015530', '1010301001000016', 'b5', '1', '7400', '2017-06-05'),
+('20170605015530', '1010301003000005', 'b5', '12', '7400', '2017-06-05'),
+('20170605015530', '1010301001000006', 'b5', '1', '7400', '2017-06-05'),
+('20170605015530', '1010305999900004', 'b5', '5', '7400', '2017-06-05'),
+('20170605015530', '1010301003000002', 'b5', '1', '7400', '2017-06-05'),
+('20170605015530', '1010304010000001', 'b5', '1', '7400', '2017-06-05'),
+('20170717005110', '1010301003000012', 'b1', '1', '7400', '2017-07-17'),
+('20170717005110', '1010301003000013', 'b1', '1', '7400', '2017-07-17'),
+('20170717005110', '1010301003000005', 'b1', '12', '7400', '2017-07-17'),
+('20170717005110', '1010303002000001', 'b1', '1', '7400', '2017-07-17'),
+('20170807011405', '1010301006000013', 'b1', '3', '7400', '2017-08-07'),
+('20170807011405', '1010305008000048', 'b1', '1', '7400', '2017-08-07'),
+('20170807011405', '1010301008000009', 'b1', '2', '7400', '2017-08-07'),
+('20170807011405', '1010301003000005', 'b1', '12', '7400', '2017-08-07'),
+('20170807011405', '1010303002000007', 'b1', '1', '7400', '2017-08-07'),
+('20170807011405', '1010305006000004', 'b1', '1', '7400', '2017-08-07'),
+('20170807011405', '1010302004000007', 'b1', '100', '7400', '2017-08-07'),
+('20170807011405', '1010303002000008', 'b1', '1', '7400', '2017-08-07'),
+('20170807011405', '1010305008000048', 'b1', '1', '7400', '2017-08-07'),
+('20170807011405', '1010303002000009', 'b1', '1', '7400', '2017-08-07'),
+('20170316010306', '1010301008008006', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010301003000002', 'b4', '4', '7400', '2017-03-16'),
+('20170316010306', '1010301003000017', 'b4', '2', '7400', '2017-03-16'),
+('20170316010306', '1010301003000026', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010304006000019', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010301001000009', 'b4', '3', '7400', '2017-03-16'),
+('20170316010306', '1010301004000008', 'b4', '2', '7400', '2017-03-16'),
+('20170316010306', '1010301006000001', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010303002000007', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010301001000072', 'b4', '12', '7400', '2017-03-16'),
+('20170316010306', '1010301001000002', 'b4', '12', '7400', '2017-03-16'),
+('20170316010306', '1010302001000009', 'b4', '5', '7400', '2017-03-16'),
+('20170316010306', '1010301003000005', 'b4', '6', '7400', '2017-03-16'),
+('20170316010306', '1010303002000008', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010301001000006', 'b4', '2', '7400', '2017-03-16'),
+('20170316010306', '1010301008000003', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010303002000001', 'b4', '1', '7400', '2017-03-16'),
+('20170316010306', '1010303002000009', 'b4', '1', '7400', '2017-03-16'),
+('20170420005114', '1010304002000001', 'b1', '4', '7400', '2017-04-20'),
+('20170420005114', '1010301003000019', 'b1', '1', '7400', '2017-04-20'),
+('20170420005114', '1010301008008006', 'b1', '1', '7400', '2017-04-20'),
+('20170420005114', '1010301003000005', 'b1', '6', '7400', '2017-04-20'),
+('20170420005114', '1010301001000006', 'b1', '1', '7400', '2017-04-20'),
+('20170420005114', '1010303002000001', 'b1', '2', '7400', '2017-04-20'),
+('20170420005114', '1010301003000002', 'b1', '2', '7400', '2017-04-20'),
+('20170420005114', '1010302004000007', 'b1', '200', '7400', '2017-04-20'),
+('20170516011236', '1010301003000005', 'b1', '6', '7400', '2017-05-16'),
+('20170524015218', '1010302999000002', 'b1', '1', '7400', '2017-05-24'),
+('20170524015218', '1010301003000005', 'b1', '6', '7400', '2017-05-24'),
+('20170524015218', '1010306010000002', 'b1', '6', '7400', '2017-05-24'),
+('20170524015218', '1010305012000019', 'b1', '1', '7400', '2017-05-24'),
+('20170524015218', '1010305002000033', 'b1', '1', '7400', '2017-05-24'),
+('20170524015218', '1010301006000004', 'b1', '5', '7400', '2017-05-24'),
+('20170714031036', '1010302001000010', 'b1', '5', '7400', '2017-07-14'),
+('20170714031036', '1010301003000016', 'b1', '1', '7400', '2017-07-14'),
+('20170714031036', '1010302999000002', 'b1', '1', '7400', '2017-07-14'),
+('20170714031036', '1010301003000005', 'b1', '12', '7400', '2017-07-14'),
+('20170802002025', '1010301003000016', 'b6', '1', '7400', '2017-08-02'),
+('20170802002025', '1010301003000013', 'b6', '1', '7400', '2017-08-02'),
+('20170802002025', '1010301003000005', 'b6', '6', '7400', '2017-08-02'),
+('20171016005041', '1010301011000002', 'b4', '1', '7400', '2017-10-16'),
+('20171016005041', '1010301003000005', 'b4', '6', '7400', '2017-10-16'),
+('20171016005041', '1010301003000002', 'b4', '4', '7400', '2017-10-16'),
+('20171016005041', '1010301003000001', 'b4', '2', '7400', '2017-10-16'),
+('20171016005041', '1010302001000009', 'b4', '1', '7400', '2017-10-16'),
+('20171016005041', '1010301011000001', 'b4', '1', '7400', '2017-10-16'),
+('20171017005208', '1010301001000033', 'b1', '3', '7400', '2017-10-17'),
+('20171017005208', '1010301008000003', 'b1', '1', '7400', '2017-10-17'),
+('20171017005208', '1010301006000012', 'b1', '2', '7400', '2017-10-17'),
+('20171017005208', '1010301001000020', 'b1', '1', '7400', '2017-10-17'),
+('20171017005208', '1010301006000038', 'b1', '2', '7400', '2017-10-17'),
+('20171017005208', '1010301011000002', 'b1', '1', '7400', '2017-10-17'),
+('20171017005208', '1010306005000007', 'b1', '2', '7400', '2017-10-17'),
+('20171017005208', '1010301003000018', 'b1', '2', '7400', '2017-10-17'),
+('20171017005208', '1010301001000021', 'b1', '1', '7400', '2017-10-17'),
+('20171017005208', '1010301006000039', 'b1', '2', '7400', '2017-10-17'),
+('20171017005208', '1010301001000016', 'b1', '6', '7400', '2017-10-17'),
+('20171017005208', '1010305999000035', 'b1', '1', '7400', '2017-10-17'),
+('20171017005208', '1010301006000004', 'b1', '12', '7400', '2017-10-17'),
+('20171017005208', '1010301006000037', 'b1', '24', '7400', '2017-10-17'),
+('20171017005208', '1010301001000005', 'b1', '2', '7400', '2017-10-17'),
+('20171017005208', '1010306010000002', 'b1', '1', '7400', '2017-10-17'),
+('20171017005208', '1010301003000005', 'b1', '6', '7400', '2017-10-17'),
+('20171017005208', '1010301010000012', 'b1', '2', '7400', '2017-10-17'),
+('20170920030353', '1010301003000002', 'b1', '1', '7400', '2017-09-20'),
+('20170920030353', '1010301003000005', 'b1', '6', '7400', '2017-09-20'),
+('20170920030353', '1010301006000012', 'b1', '6', '7400', '2017-09-20'),
+('20170920030353', '1010302004000007', 'b1', '500', '7400', '2017-09-20'),
+('20170920030353', '1010305002000033', 'b1', '1', '7400', '2017-09-20'),
+('20170920030353', '1010301006000003', 'b1', '2', '7400', '2017-09-20'),
+('20171213005013', '1010305012000009', 'b2', '1', '7400', '2017-12-13'),
+('20171213005013', '1010301003000005', 'b2', '12', '7400', '2017-12-13'),
+('20171213060457', '1010302001000009', 'b1', '5', '7400', '2017-12-13'),
+('20171213060457', '1010301003000005', 'b1', '12', '7400', '2017-12-13'),
+('20171213061614', '1010306010000003', 'b5', '6', '7400', '2017-12-13'),
+('20171213061614', '1010305012000009', 'b5', '2', '7400', '2017-12-13'),
+('20171213061614', '1010305012000010', 'b5', '2', '7400', '2017-12-13'),
+('20171213061614', '1010301003000005', 'b5', '12', '7400', '2017-12-13'),
+('20171114013347', '1010302001000009', 'b5', '9', '7400', '2017-11-14'),
+('20171114013347', '1010305002000006', 'b5', '2', '7400', '2017-11-14'),
+('20171114013347', '1010301003000005', 'b5', '12', '7400', '2017-11-14'),
+('20171115011920', '1010304006000017', 'b4', '1', '7400', '2017-11-15'),
+('20171115011920', '1010301003000005', 'b4', '12', '7400', '2017-11-15'),
+('20171120005948', '1010303002000001', 'b4', '1', '7400', '2017-11-20'),
+('20171120005948', '1010301003000005', 'b4', '12', '7400', '2017-11-20'),
+('20171113014647', '1010302001000009', 'b1', '5', '7400', '2017-11-13'),
+('20171113014647', '1010301003000005', 'b1', '12', '7400', '2017-11-13'),
+('20171113014647', '1010303002000001', 'b1', '3', '7400', '2017-11-13'),
+('20171117002432', '1010305012000010', 'b1', '25', '7400', '2017-11-17'),
+('20171117002432', '1010305012000002', 'b1', '25', '7400', '2017-11-17'),
+('20171117002432', '1010305013000002', 'b1', '2', '7400', '2017-11-17'),
+('20171117002432', '1010301003000005', 'b1', '12', '7400', '2017-11-17'),
+('20171114073343', '1010305999000030', 'b1', '1', '7400', '2017-11-14'),
+('20171114073343', '1010305001000001', 'b1', '1', '7400', '2017-11-14'),
+('20171114073343', '1010302001000009', 'b1', '2', '7400', '2017-11-14'),
+('20171114073343', '1010301010000022', 'b1', '1', '7400', '2017-11-14'),
+('20171114073343', '1010301003000005', 'b1', '12', '7400', '2017-11-14'),
+('20171010012409', '1010301006000012', 'b4', '1', '7400', '2017-10-10'),
+('20171010012409', '1010301001000021', 'b4', '4', '7400', '2017-10-10'),
+('20171128012805', '1010301999000001', 'b2', '4', '7400', '2017-11-28'),
+('20171128012805', '1010301999000002', 'b2', '5', '7400', '2017-11-28'),
+('20171128012805', '1010301001000021', 'b2', '3', '7400', '2017-11-28'),
+('20171128002043', '1010301001000006', 'b1', '1', '7400', '2017-11-28'),
+('20171128002043', '1010301001000034', 'b1', '4', '7400', '2017-11-28'),
+('20171128002043', '1010301010000011', 'b1', '1', '7400', '2017-11-28'),
+('20171128002043', '1010301004000006', 'b1', '1', '7400', '2017-11-28'),
+('20171128002043', '1010301010000013', 'b1', '1', '7400', '2017-11-28'),
+('20171128002043', '1010301001000021', 'b1', '4', '7400', '2017-11-28'),
+('20171128074526', '1010302001000009', 'b3', '2', '7400', '2017-11-28'),
+('20171128074526', '1010305999900004', 'b3', '7', '7400', '2017-11-28'),
+('20171128074526', '1010301001000021', 'b3', '4', '7400', '2017-11-28'),
+('20171128004933', '1010301001000003', 'b4', '5', '7400', '2017-11-28'),
+('20171128004933', '1010303002000001', 'b4', '3', '7400', '2017-11-28'),
+('20171128004933', '1010301001000021', 'b4', '3', '7400', '2017-11-28'),
+('20171005014718', '1010301001000016', 'b4', '1', '7400', '2017-10-05'),
+('20171005014718', '1010301006000004', 'b4', '3', '7400', '2017-10-05'),
+('20171005014718', '1010301006000039', 'b4', '3', '7400', '2017-10-05'),
+('20171005014718', '1010301008008006', 'b4', '10', '7400', '2017-10-05'),
+('20171009062822', '1010301001000020', 'b6', '5', '7400', '2017-10-09'),
+('20171009062822', '1010301001000021', 'b6', '3', '7400', '2017-10-09'),
+('20171009062822', '1010301008008006', 'b6', '8', '7400', '2017-10-09'),
+('20171004025612', '1010301008008006', 'b1', '12', '7400', '2017-10-04'),
+('20171004025612', '1010301005000014', 'b1', '2', '7400', '2017-10-04'),
+('20171004025612', '1010301010000012', 'b1', '1', '7400', '2017-10-04'),
+('20171016005623', '1010305999900004', 'b3', '5', '7400', '2017-10-16'),
+('20171016005623', '1010301001000008', 'b3', '3', '7400', '2017-10-16'),
+('20171016005623', '1010302001000009', 'b3', '5', '7400', '2017-10-16'),
+('20171016005623', '1010305999000035', 'b3', '1', '7400', '2017-10-16'),
+('20171024023816', '1010301001000016', 'b5', '2', '7400', '2017-10-24'),
+('20171024023816', '1010301003000018', 'b5', '1', '7400', '2017-10-24'),
+('20171114010938', '1010301003000016', 'b3', '1', '7400', '2017-11-14'),
+('20171114010938', '1010301003000018', 'b3', '1', '7400', '2017-11-14'),
+('20171114010938', '1010301006000004', 'b3', '5', '7400', '2017-11-14'),
+('20171114010938', '1010301008008006', 'b3', '7', '7400', '2017-11-14'),
+('20171121000242', '1010301001000003', 'b5', '1', '7400', '2017-11-21'),
+('20171121000242', '1010301999000002', 'b5', '1', '7400', '2017-11-21'),
+('20171121000242', '1010301004000006', 'b5', '1', '7400', '2017-11-21'),
+('20171121000242', '1010301001000021', 'b5', '1', '7400', '2017-11-21'),
+('20171121000242', '1010303002000001', 'b5', '2', '7400', '2017-11-21'),
+('20171121000242', '1010301008008006', 'b5', '6', '7400', '2017-11-21'),
+('20171123021142', '1010304006000004', 'b2', '2', '7400', '2017-11-23'),
+('20171123021142', '1010304006000014', 'b2', '6', '7400', '2017-11-23'),
+('20171123021142', '1010301008008006', 'b2', '7', '7400', '2017-11-23'),
+('20180212065930', '1010399999000428', 'b3', '1', '7400', '2018-02-12'),
+('20180112070528', '1010399999000428', 's15', '1', '7400', '2018-01-12'),
+('20180122070427', '1010399999000428', 's23', '1', '7400', '2018-02-12'),
+('20180122070315', '1010399999000428', 's22', '1', '7400', '2018-02-12'),
+('20180122070212', '1010399999000428', 's21', '1', '7400', '2018-02-12'),
+('20180122070050', '1010399999000428', 'b4', '1', '7400', '2018-02-12'),
+('20180122070016', '1010399999000428', 'b5', '1', '7400', '2018-02-12'),
+('20180212071823', '1010399999000428', 's15', '1', '7400', '2018-02-12'),
+('20180212071900', '1010399999000428', 's16', '1', '7400', '2018-02-12'),
+('20180212071934', '1010399999000428', 's17', '1', '7400', '2018-02-12'),
+('20180212072020', '1010399999000428', 's20', '1', '7400', '2018-02-12'),
+('20180212072103', '1010399999000428', 's18', '1', '7400', '2018-02-12'),
+('20180212072200', '1010399999000428', 's19', '1', '7400', '2018-02-12'),
+('20180212072239', '1010399999000428', 's26', '1', '7400', '2018-02-12');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trx_masuk`
+-- Struktur dari tabel `trx_masuk`
 --
 
 CREATE TABLE `trx_masuk` (
@@ -15737,7 +15779,7 @@ CREATE TABLE `trx_masuk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `trx_masuk`
+-- Dumping data untuk tabel `trx_masuk`
 --
 
 INSERT INTO `trx_masuk` (`id_trx_m`, `kd_brg`, `penyedia`, `jumlah`, `id_satker`, `tgl_masuk`) VALUES
@@ -16262,36 +16304,6 @@ INSERT INTO `trx_masuk` (`id_trx_m`, `kd_brg`, `penyedia`, `jumlah`, `id_satker`
 ('20171110030941', '1010301010000003', 'UD Kalam Hidup', '28', '7400', '2017-11-10'),
 ('20171110030941', '1010301001000006', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
 ('20171110030941', '1010301003000002', 'UD Kalam Hidup', '121', '7400', '2017-11-10'),
-('20171110233816', '1010301001000002', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
-('20171110233816', '1010301001000006', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
-('20171110233816', '1010301003000002', 'UD Kalam Hidup', '10', '7400', '2017-11-10'),
-('20171110233816', '1010301003000028', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
-('20171110233816', '1010301003000018', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110233816', '1010301003000013', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110233816', '1010301003000005', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110233816', '1010301003000006', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110233816', '1010301003000007', 'UD Kalam Hidup', '2', '7400', '2017-11-10'),
-('20171110233816', '1010301003000008', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110234340', '1010301001000002', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
-('20171110234340', '1010301001000006', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
-('20171110234340', '1010301003000002', 'UD Kalam Hidup', '10', '7400', '2017-11-10'),
-('20171110234340', '1010301003000028', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
-('20171110234340', '1010301003000018', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110234340', '1010301003000013', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
-('20171110234340', '1010301003000005', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110234340', '1010301003000016', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110234340', '1010301003000007', 'UD Kalam Hidup', '1', '7400', '2017-11-10');
-INSERT INTO `trx_masuk` (`id_trx_m`, `kd_brg`, `penyedia`, `jumlah`, `id_satker`, `tgl_masuk`) VALUES
-('20171110234340', '1010301003000008', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110234340', '1010301005000003', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
-('20171110234704', '1010301001000002', 'UD Kalam Hidup', '32', '7400', '2017-11-10'),
-('20171110234704', '1010301001000006', 'UD Kalam Hidup', '23', '7400', '2017-11-10'),
-('20171110234704', '1010301003000002', 'UD Kalam Hidup', '59', '7400', '2017-11-10'),
-('20171110234704', '1010301003000028', 'UD Kalam Hidup', '60', '7400', '2017-11-10'),
-('20171110234704', '1010301003000018', 'UD Kalam Hidup', '2', '7400', '2017-11-10'),
-('20171110234704', '1010301003000005', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
-('20171110234704', '1010301003000008', 'UD Kalam Hidup', '2', '7400', '2017-11-10'),
-('20171110234704', '1010301005000014', 'UD Kalam Hidup', '6', '7400', '2017-11-10'),
 ('20171110235043', '1010301011000002', 'UD Kalam Hidup', '12', '7400', '2017-11-10'),
 ('20171110235043', '1010301003000016', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
 ('20171110235043', '1010301003000013', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
@@ -16309,11 +16321,32 @@ INSERT INTO `trx_masuk` (`id_trx_m`, `kd_brg`, `penyedia`, `jumlah`, `id_satker`
 ('20171212002041', '1010305012000010', 'CV. Mandiri Teknik Utama', '6', '7400', '2017-12-12'),
 ('20171212002041', '1010305999900004', 'CV. Mandiri Teknik Utama', '32', '7400', '2017-12-12'),
 ('20171110004050', '1010301006000007', 'UD Kalam Hidup', '16', '7400', '2017-11-10'),
-('20171110004050', '1010301003000013', 'UD Kalam Hidup', '2', '7400', '2017-11-10'),
+('20171110004050', '1010301003000013', 'UD Kalam Hidup', '2', '7400', '2017-11-10');
+INSERT INTO `trx_masuk` (`id_trx_m`, `kd_brg`, `penyedia`, `jumlah`, `id_satker`, `tgl_masuk`) VALUES
 ('20171110004050', '1010301004000006', 'UD Kalam Hidup', '6', '7400', '2017-11-10'),
 ('20171110004050', '1010301006000018', 'UD Kalam Hidup', '16', '7400', '2017-11-10'),
 ('20171110004050', '1010301006000040', 'UD Kalam Hidup', '6', '7400', '2017-11-10'),
 ('20171110004050', '1010301010000019', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
+('20161229045831', '1010301010000003', 'Stock Opname Barang Tanggal 12/29/2016', '7', '7400', '2016-12-29'),
+('20161231063359', '1010301010000009', 'Stock Opname Barang Tanggal 12/31/2016', '3', '7400', '2016-12-31'),
+('20161231063623', '1010301010000004', 'Stock Opname Barang Tanggal 12/31/2016', '4', '7400', '2016-12-31'),
+('20161231071615', '1010301006000010', 'Stock Opname Barang Tanggal 12/31/2016', '18', '7400', '2016-12-31'),
+('20161231072311', '1010301004000004', 'Stock Opname Barang Tanggal 12/31/2016', '3', '7400', '2016-12-31'),
+('20161231080611', '1010301003000028', 'Stock Opname Barang Tanggal 12/31/2016', '3', '7400', '2016-12-31'),
+('20161231080827', '1010301003000028', 'Stock Opname Barang Tanggal 12/31/2016', '1', '7400', '2016-12-31'),
+('20161231081248', '1010301003000026', 'Stock Opname Barang Tanggal 12/31/2016', '6', '7400', '2016-12-31'),
+('20161231085015', '1010301001000021', 'Stock Opname Barang Tanggal 12/31/2016', '5', '7400', '2016-12-31'),
+('20180125012924', '1010301006000004', 'UD SYAHID', '50', '7400', '2018-01-25'),
+('20180125013045', '1010301006000004', 'UD SYAHID', '50', '7400', '2018-01-25'),
+('20180125013138', '1010301006000004', 'UD SYAHID', '200', '7400', '2018-01-25'),
+('20180125013215', '1010301006000004', 'UD SYAHID', '50', '7400', '2018-01-25'),
+('20180125023029', '1010302001000014', 'UD Kalam Hidup', '20', '7400', '2018-01-25'),
+('20180125023029', '1010301003000019', 'UD Kalam Hidup', '10', '7400', '2018-01-25'),
+('20180125023029', '1010301006000025', 'UD Kalam Hidup', '48', '7400', '2018-01-25'),
+('20180125070205', '1010302001000014', 'UD Kalam Hidup', '20', '7400', '2018-01-25'),
+('20180125071217', '1010302001000014', 'UD Kalam Hidup', '30', '7400', '2018-01-25'),
+('20180125071300', '1010302001000014', 'UD Kalam Hidup', '30', '7400', '2018-01-25'),
+('20161231003145', '1010301003000005', 'Stock Opname Barang Tanggal 12/31/2016', '12', '7400', '2016-12-31'),
 ('20170223023728', '1010301010000013', 'UD Kalam Hidup', '12', '7400', '2017-02-23'),
 ('20170223023728', '1010301002000009', 'UD Kalam Hidup', '36', '7400', '2017-02-23'),
 ('20170223023728', '1010302004000007', 'UD Kalam Hidup', '2500', '7400', '2017-02-23'),
@@ -16358,14 +16391,73 @@ INSERT INTO `trx_masuk` (`id_trx_m`, `kd_brg`, `penyedia`, `jumlah`, `id_satker`
 ('20170223023728', '1010301003000018', 'UD Kalam Hidup', '12', '7400', '2017-02-23'),
 ('20170223023728', '1010301008008005', 'UD Kalam Hidup', '24', '7400', '2017-02-23'),
 ('20170223023728', '1010301006000003', 'UD Kalam Hidup', '60', '7400', '2017-02-23'),
-('20170223023728', '1010301003000005', 'UD Kalam Hidup', '12', '7400', '2017-02-23'),
+('20170223023728', '1010301003000005', 'UD Kalam Hidup', '144', '7400', '2017-02-23'),
 ('20170223023728', '1010301006000018', 'UD Kalam Hidup', '10', '7400', '2017-02-23'),
-('20170223023728', '1010301010000021', 'UD Kalam Hidup', '6', '7400', '2017-02-23');
+('20170223023728', '1010301010000021', 'UD Kalam Hidup', '6', '7400', '2017-02-23'),
+('20180125070840', '1010302002000039', 'UD Kalam Hidup', '12', '7400', '2018-01-25'),
+('20180125070840', '1010301003000019', 'UD Kalam Hidup', '4', '7400', '2018-01-25'),
+('20180125070840', '1010301006000003', 'UD Kalam Hidup', '60', '7400', '2018-01-25'),
+('20180125070840', '1010301003000007', 'UD Kalam Hidup', '48', '7400', '2018-01-25'),
+('20180125070840', '1010301006000035', 'UD Kalam Hidup', '1', '7400', '2018-01-25'),
+('20180125070840', '1010301011000006', 'UD Kalam Hidup', '12', '7400', '2018-01-25'),
+('20180125070840', '1010301001000037', 'UD Kalam Hidup', '36', '7400', '2018-01-25'),
+('20180125070840', '1010302004000012', 'UD Kalam Hidup', '3600', '7400', '2018-01-25'),
+('20171110233816', '1010301001000002', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
+('20171110233816', '1010301001000006', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
+('20171110233816', '1010301003000002', 'UD Kalam Hidup', '10', '7400', '2017-11-10'),
+('20171110233816', '1010301003000013', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
+('20171110233816', '1010301003000018', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
+('20171110233816', '1010301003000006', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
+('20171110233816', '1010301003000007', 'UD Kalam Hidup', '2', '7400', '2017-11-10'),
+('20171110233816', '1010301003000005', 'UD Kalam Hidup', '48', '7400', '2017-11-10'),
+('20171110233816', '1010301003000008', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
+('20171110233816', '1010301003000028', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
+('20171110234704', '1010301001000002', 'UD Kalam Hidup', '32', '7400', '2017-11-10'),
+('20171110234704', '1010301001000006', 'UD Kalam Hidup', '23', '7400', '2017-11-10'),
+('20171110234704', '1010301003000002', 'UD Kalam Hidup', '59', '7400', '2017-11-10'),
+('20171110234704', '1010301003000018', 'UD Kalam Hidup', '2', '7400', '2017-11-10'),
+('20171110234704', '1010301005000014', 'UD Kalam Hidup', '6', '7400', '2017-11-10'),
+('20171110234704', '1010301003000005', 'UD Kalam Hidup', '48', '7400', '2017-11-10'),
+('20171110234704', '1010301003000008', 'UD Kalam Hidup', '2', '7400', '2017-11-10'),
+('20171110234704', '1010301003000028', 'UD Kalam Hidup', '60', '7400', '2017-11-10'),
+('20171110234340', '1010301001000002', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
+('20171110234340', '1010301001000006', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
+('20171110234340', '1010301003000016', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
+('20171110234340', '1010301003000002', 'UD Kalam Hidup', '10', '7400', '2017-11-10'),
+('20171110234340', '1010301003000013', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
+('20171110234340', '1010301003000018', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
+('20171110234340', '1010301005000003', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
+('20171110234340', '1010301003000007', 'UD Kalam Hidup', '1', '7400', '2017-11-10'),
+('20171110234340', '1010301003000005', 'UD Kalam Hidup', '48', '7400', '2017-11-10'),
+('20171110234340', '1010301003000008', 'UD Kalam Hidup', '4', '7400', '2017-11-10'),
+('20171110234340', '1010301003000028', 'UD Kalam Hidup', '20', '7400', '2017-11-10'),
+('20180122065650', '1010399999000428', 'Kasubag.Pengadaan Barang/Jasa BPS Prop.Sultra', '30', '7400', '2018-01-22'),
+('20180125080748', '1010305002000018', 'CV Mandiri Teknik Utama', '6', '7400', '2018-01-25'),
+('20180125080748', '1010305999000039', 'CV Mandiri Teknik Utama', '3', '7400', '2018-01-25'),
+('20180125080748', '1010306003000005', 'CV Mandiri Teknik Utama', '15', '7400', '2018-01-25'),
+('20180125080748', '1010306005000004', 'CV Mandiri Teknik Utama', '15', '7400', '2018-01-25'),
+('20180125080748', '1010306010000002', 'CV Mandiri Teknik Utama', '48', '7400', '2018-01-25'),
+('20180125080748', '1010306999000003', 'CV Mandiri Teknik Utama', '1', '7400', '2018-01-25'),
+('20180125080748', '1010305002000011', 'CV Mandiri Teknik Utama', '3', '7400', '2018-01-25'),
+('20180125080748', '1010305012000008', 'CV Mandiri Teknik Utama', '1', '7400', '2018-01-25'),
+('20180125080748', '1010306001000007', 'CV Mandiri Teknik Utama', '100', '7400', '2018-01-25'),
+('20180125080748', '1010305004000023', 'CV Mandiri Teknik Utama', '10', '7400', '2018-01-25'),
+('20180125080748', '1010305002000037', 'CV Mandiri Teknik Utama', '8', '7400', '2018-01-25'),
+('20180125080748', '1010305012000005', 'CV Mandiri Teknik Utama', '2', '7400', '2018-01-25'),
+('20180125080748', '1010305999000041', 'CV Mandiri Teknik Utama', '2', '7400', '2018-01-25'),
+('20180125080748', '1010305999900004', 'CV Mandiri Teknik Utama', '85', '7400', '2018-01-25'),
+('20180125080748', '1010305012000019', 'CV Mandiri Teknik Utama', '12', '7400', '2018-01-25'),
+('20180125080748', '1010306010000021', 'CV Mandiri Teknik Utama', '4', '7400', '2018-01-25'),
+('20180125080748', '1010305004000034', 'CV Mandiri Teknik Utama', '10', '7400', '2018-01-25'),
+('20180125080748', '1010305014000005', 'CV Mandiri Teknik Utama', '8', '7400', '2018-01-25'),
+('20180125080748', '1010305014000006', 'CV Mandiri Teknik Utama', '2', '7400', '2018-01-25'),
+('20180125080748', '1010301010000026', 'CV Mandiri Teknik Utama', '1', '7400', '2018-01-25'),
+('20180125080748', '1010305012000022', 'CV Mandiri Teknik Utama', '6', '7400', '2018-01-25');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trx_perawatan`
+-- Struktur dari tabel `trx_perawatan`
 --
 
 CREATE TABLE `trx_perawatan` (
@@ -16385,7 +16477,7 @@ CREATE TABLE `trx_perawatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `trx_perawatan`
+-- Dumping data untuk tabel `trx_perawatan`
 --
 
 INSERT INTO `trx_perawatan` (`id_trx`, `id_grup_trx`, `tanggal_dicatat`, `tanggal_selesai`, `no_spk`, `pekerjaan`, `sparepart`, `km`, `penyedia`, `biaya`, `keterangan`, `id_barang`, `kendaraan_or_no`) VALUES
@@ -16673,7 +16765,26 @@ INSERT INTO `trx_perawatan` (`id_trx`, `id_grup_trx`, `tanggal_dicatat`, `tangga
 (383, '20180131030154', '2018-01-31', '2018-01-31', '', 'G. Talang air', 'Talang Air', 0, 'Bengkel Variasi Mobil', 300000, '', 75, 1),
 (384, '20180131030154', '2018-01-31', '2018-01-31', '', 'Perbaikan Tape dan Doorlok pintu', '', 0, 'Bengkel Variasi Mobil', 100000, '', 75, 1),
 (385, '20180131030154', '2018-01-31', '2018-01-31', '', 'G. Cover stir', 'Cover Stir', 0, 'Bengkel Variasi Mobil', 150000, '', 75, 1),
-(386, '20180205062622', '2018-01-08', '2018-01-08', '', 'G. Ban Dalam', 'Ban Dalam Swalow', 0, 'Ota Motor', 40000, '', 86, 1);
+(386, '20180205062622', '2018-01-08', '2018-01-08', '', 'G. Ban Dalam', 'Ban Dalam Swalow', 0, 'Ota Motor', 40000, '', 86, 1),
+(387, '20180214015456', '2018-02-03', '2018-02-03', '', 'G. Oli Mesin', 'Oli Mesin Mesran', 0, 'Alif Motor', 30000, '', 100, 1),
+(388, '20180214015456', '2018-02-03', '2018-02-03', '', 'G. Kampas depan', 'Kampas Cakram Depan', 0, 'Alif Motor', 35000, '', 100, 1),
+(389, '20180214015456', '2018-02-03', '2018-02-03', '', 'Servis Karbu', '', 0, 'Alif Motor', 35000, '', 100, 1),
+(390, '20180214015456', '2018-02-03', '2018-02-03', '', 'G. Tali speede Meter', 'Tali speede meter', 0, 'Alif Motor', 70000, '', 100, 1),
+(391, '20180214015734', '2018-02-13', '2018-02-13', '', 'G. Ban Luar 70/90', 'Ban Luar FDR', 0, 'Sukses Abadi motor', 135000, '', 84, 1),
+(392, '20180214015734', '2018-02-13', '2018-02-13', '', 'G. Busi', 'Busi NGK', 0, 'Sukses Abadi motor', 150000, '', 84, 1),
+(393, '20180214015734', '2018-02-13', '2018-02-13', '', 'G. Kampas Cakram Dpn', 'Kampas Cakram Depan', 0, 'Sukses Abadi motor', 30000, '', 84, 1),
+(394, '20180214015734', '2018-02-13', '2018-02-13', '', 'G. Kepala Busi', 'Kepala Busi', 0, 'Sukses Abadi motor', 20000, '', 84, 1),
+(395, '20180214015928', '2018-02-13', '2018-02-13', '', 'G. Ban Luar FDR Blk', 'Ban Luar FDR', 0, 'Sukses Abadi motor', 190000, '', 110, 1),
+(396, '20180214015928', '2018-02-13', '2018-02-13', '', 'G. Oli Mesin', 'Oli Mesin Yamalube', 0, 'Sukses Abadi motor', 34000, '', 110, 1),
+(397, '20180214015928', '2018-02-13', '2018-02-13', '', 'G. balon Lampu', 'Balon Lampu depan', 0, 'Sukses Abadi motor', 40000, '', 110, 1),
+(398, '20180214020200', '2018-02-02', '2018-02-02', '', 'G. Oli Mesin', 'Oli mesin Super 0,8', 0, 'UD Maju Motor', 38000, '', 107, 1),
+(399, '20180214020200', '2018-02-02', '2018-02-02', '', 'G. Busi', 'Busi', 0, 'UD Maju Motor', 20000, '', 107, 1),
+(400, '20180214020200', '2018-02-02', '2018-02-02', '', 'Jasa Service', '', 0, 'UD Maju Motor', 50000, '', 107, 1),
+(401, '20180214020409', '2018-02-06', '2018-02-06', '', 'G. Oli Mesin', 'Oli Mesin Yamalube', 0, 'Sukses Abadi motor', 34000, '', 111, 1),
+(402, '20180214020409', '2018-02-06', '2018-02-06', '', 'Stel Rante', '', 0, 'Sukses Abadi motor', 5000, '', 111, 1),
+(403, '20180214020409', '2018-02-06', '2018-02-06', '', 'G. balon Lampu', 'Balon Lampu depan', 0, 'Sukses Abadi motor', 24999, '', 111, 1),
+(404, '20180214020556', '2018-01-31', '2018-01-31', '', 'G. Oli Mesin', 'Oli Mesin Yamalube', 0, 'Printis Motor', 36000, '', 106, 1),
+(405, '20180214020556', '2018-01-31', '2018-01-31', '', 'Stel Rante', '', 0, 'Printis Motor', 4999, '', 106, 1);
 
 --
 -- Indexes for dumped tables
@@ -16791,7 +16902,7 @@ ALTER TABLE `master_jenis_bmn`
 -- AUTO_INCREMENT for table `trx_perawatan`
 --
 ALTER TABLE `trx_perawatan`
-  MODIFY `id_trx` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=387;COMMIT;
+  MODIFY `id_trx` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=406;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

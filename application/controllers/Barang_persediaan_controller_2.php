@@ -515,24 +515,11 @@ class Barang_persediaan_controller extends CI_Controller {
 				$isi=$isi.'<div role="tabpanel" style="text-align:center" class="tab-pane fade" id="tab_content'.$j.'" aria-labelledby="home-tab">';
 			}
 
-			$objPHPExcel=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template - Copy.xlsx');
-			$objWorksheet = $objPHPExcel->getActiveSheet();
-			//$objWorksheet->insertNewRowBefore(18,3);
-			$this->copyRowFull($objWorksheet, $objWorksheet, 14, 21);
-			//$objWorksheet->insertNewRowBefore(18,3);
-			//$objWorksheet->duplicateStyle($objWorksheet->getStyle('B18','B19:B21');
-			//$objPHPExcel->getActiveSheet()->setTitle(0);
-			//$isi=$isi.$this->isitabel($objPHPExcel, $row, $tglAwal, $tglAkhir, 'buat',0);
-			$objectWriter=PHPExcel_IOFactory::createWriter($objPHPExcel, 'HTML');
-			$objectWriter->setSheetIndex(0);
+			$objPHPExcel=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template.xlsx');
+			$objPHPExcel->getActiveSheet()->setTitle(0);
+			$isi=$isi.$this->isitabel($objPHPExcel, $row, $tglAwal, $tglAkhir, 'buat',0);
 
-			ob_start();
-			$objectWriter->save('php://output');
-			$a = ob_get_contents();
-			ob_end_clean();
-
-			//$isi=$isi.'</div>';
-			$isi=$a.'</div>';
+			$isi=$isi.'</div>';
 			$j++;
 		}
 
@@ -541,20 +528,6 @@ class Barang_persediaan_controller extends CI_Controller {
 		$this->load->view('template/layout', $content);
 
 	}
-
-//copyrow
-function copyRowFull(&$ws_from, &$ws_to, $row_from, $row_to) {
-  $ws_to->getRowDimension($row_to)->setRowHeight($ws_from->getRowDimension($row_from)->getRowHeight());
-  $lastColumn = $ws_from->getHighestColumn();
-  ++$lastColumn;
-  for ($c = 'A'; $c != $lastColumn; ++$c) {
-    $cell_from = $ws_from->getCell($c.$row_from);
-    $cell_to = $ws_to->getCell($c.$row_to);
-    $cell_to->setXfIndex($cell_from->getXfIndex()); // black magic here
-    $cell_to->setValue($cell_from->getValue());
-  }
-}
-
 
 	public function olahGetBarangPersediaan($barang_persediaan, $tglAwal, $tglAkhir){
 		$barang=Array();
@@ -827,7 +800,6 @@ function copyRowFull(&$ws_from, &$ws_to, $row_from, $row_to) {
 				$objPHPExcelIsi=$this->isitabel($objPHPExcel, $row, $tglAwal, $tglAkhir, 'download',$i);
 				$objPHPExcel->getActiveSheet()->setTitle(substr($nm_barang,0,25));
 			}else{
-
 					// Set active sheet index to the first sheet, so Excel opens this as the first sheet
 					$objPHPExcelCad->setActiveSheetIndex(0);
 
