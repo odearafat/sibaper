@@ -76,9 +76,13 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'sultrada_db74',
-	'password' => 'sultra740k3!',
-	'database' => 'sultrada_sibaper',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'sibaper',
+
+	//'username' => 'sultrada_db7',
+	//'password' => 'sultra740k3!',
+	//'database' => 'sultrada_sibaper',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
