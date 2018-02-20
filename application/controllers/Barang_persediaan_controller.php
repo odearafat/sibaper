@@ -517,12 +517,26 @@ class Barang_persediaan_controller extends CI_Controller {
 
 			$objPHPExcel=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template - Copy.xlsx');
 			$objWorksheet = $objPHPExcel->getActiveSheet();
-			//$objWorksheet->insertNewRowBefore(18,3);
-			$this->copyRowFull($objWorksheet, $objWorksheet, 14, 21);
-			//$objWorksheet->insertNewRowBefore(18,3);
-			//$objWorksheet->duplicateStyle($objWorksheet->getStyle('B18','B19:B21');
-			//$objPHPExcel->getActiveSheet()->setTitle(0);
-			//$isi=$isi.$this->isitabel($objPHPExcel, $row, $tglAwal, $tglAkhir, 'buat',0);
+			$objWorksheet->insertNewRowBefore(17,3);
+			for ($i=17; $i <(17+(3)) ; $i++) {
+				$objWorksheet->mergeCells('B'.$i.':C'.$i);
+				$objWorksheet->mergeCells('D'.$i.':E'.$i);
+				$objWorksheet->mergeCells('F'.$i.':K'.$i);
+				$objWorksheet->mergeCells('L'.$i.':M'.$i);
+				$objWorksheet->mergeCells('N'.$i.':O'.$i);
+				$objWorksheet->mergeCells('P'.$i.':Q'.$i);
+				$objWorksheet->mergeCells('P'.$i.':Q'.$i);
+				$objWorksheet->mergeCells('S'.$i.':T'.$i);
+				$objWorksheet->mergeCells('U'.$i.':W'.$i);
+				$objWorksheet->mergeCells('X'.$i.':AC'.$i);
+				$objWorksheet->mergeCells('AD'.$i.':AE'.$i);
+				$objWorksheet->mergeCells('AF'.$i.':AG'.$i);
+				$objWorksheet->mergeCells('AH'.$i.':AI'.$i);
+				# code...
+			}
+
+
+
 			$objectWriter=PHPExcel_IOFactory::createWriter($objPHPExcel, 'HTML');
 			$objectWriter->setSheetIndex(0);
 
