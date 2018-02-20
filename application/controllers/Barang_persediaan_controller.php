@@ -495,6 +495,7 @@ class Barang_persediaan_controller extends CI_Controller {
 
 		$i=0;
 		foreach($barang_persediaan as $row){
+
 			if($i==0){
 				$head=$head.'<li role="presentation" class="active"><a href="#tab_content0" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">'.($i+1).'</a></li>';
 			}else{
@@ -517,8 +518,14 @@ class Barang_persediaan_controller extends CI_Controller {
 
 			$objPHPExcel=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template - Copy.xlsx');
 			$objWorksheet = $objPHPExcel->getActiveSheet();
-			$objWorksheet->insertNewRowBefore(17,3);
-			for ($i=17; $i <(17+(3)) ; $i++) {
+
+			$isi=$isi.$this->isitabel($objPHPExcel, $row, $tglAwal, $tglAkhir, 'buat',0);
+
+			$isi=$isi.'</div>';
+			$j++;
+			/*$b=500;
+			$objWorksheet->insertNewRowBefore(18,$b);
+			for ($i=18; $i<18+$b ; $i++) {
 				$objWorksheet->mergeCells('B'.$i.':C'.$i);
 				$objWorksheet->mergeCells('D'.$i.':E'.$i);
 				$objWorksheet->mergeCells('F'.$i.':K'.$i);
@@ -532,7 +539,6 @@ class Barang_persediaan_controller extends CI_Controller {
 				$objWorksheet->mergeCells('AD'.$i.':AE'.$i);
 				$objWorksheet->mergeCells('AF'.$i.':AG'.$i);
 				$objWorksheet->mergeCells('AH'.$i.':AI'.$i);
-				# code...
 			}
 
 
@@ -546,8 +552,8 @@ class Barang_persediaan_controller extends CI_Controller {
 			ob_end_clean();
 
 			//$isi=$isi.'</div>';
-			$isi=$a.'</div>';
-			$j++;
+			$isi=$isi.$a.'</div>';
+			$j++;*/
 		}
 
 		$isi=$isi.'</div>';
@@ -556,18 +562,7 @@ class Barang_persediaan_controller extends CI_Controller {
 
 	}
 
-//copyrow
-function copyRowFull(&$ws_from, &$ws_to, $row_from, $row_to) {
-  $ws_to->getRowDimension($row_to)->setRowHeight($ws_from->getRowDimension($row_from)->getRowHeight());
-  $lastColumn = $ws_from->getHighestColumn();
-  ++$lastColumn;
-  for ($c = 'A'; $c != $lastColumn; ++$c) {
-    $cell_from = $ws_from->getCell($c.$row_from);
-    $cell_to = $ws_to->getCell($c.$row_to);
-    $cell_to->setXfIndex($cell_from->getXfIndex()); // black magic here
-    $cell_to->setValue($cell_from->getValue());
-  }
-}
+
 
 
 	public function olahGetBarangPersediaan($barang_persediaan, $tglAwal, $tglAkhir){
@@ -599,6 +594,10 @@ function copyRowFull(&$ws_from, &$ws_to, $row_from, $row_to) {
 		$query2=$this->Barang_persediaan_model->queryTrxMasuk($kd_brg, $tglAwal, $tglAkhir, $this->session->userdata('id_satker'));
 		$query3=$this->Barang_persediaan_model->queryStokAwalKeluar($tglAwal, $kd_brg);
 		$query4=$this->Barang_persediaan_model->queryStokAwalMasuk($tglAwal, $kd_brg);
+
+
+
+
 
 		$nm_satker="";
 		if(substr ($this->session->userdata('id_satker'), 2, 2)=="00"){
@@ -740,8 +739,32 @@ function copyRowFull(&$ws_from, &$ws_to, $row_from, $row_to) {
 											->setCellValue('Z11', $keluarBulan[12])
 											->setCellValue('AD11', '=L16')
 											->setCellValue('AB11', '=SUM(A11:Z11)');
+
+
+		//Percobaan
+		$b=round(count($data)/2);
+		$objWorksheet = $objPHPExcel->getActiveSheet();
+		$objWorksheet->insertNewRowBefore(18,$b);
+		for ($m=18; $m<18+$b ; $m++) {
+			$objWorksheet->mergeCells('B'.$m.':C'.$m);
+			$objWorksheet->mergeCells('D'.$m.':E'.$m);
+			$objWorksheet->mergeCells('F'.$m.':K'.$m);
+			$objWorksheet->mergeCells('L'.$m.':M'.$m);
+			$objWorksheet->mergeCells('N'.$m.':O'.$m);
+			$objWorksheet->mergeCells('P'.$m.':Q'.$m);
+			$objWorksheet->mergeCells('P'.$m.':Q'.$m);
+			$objWorksheet->mergeCells('S'.$m.':T'.$m);
+			$objWorksheet->mergeCells('U'.$m.':W'.$m);
+			$objWorksheet->mergeCells('X'.$m.':AC'.$m);
+			$objWorksheet->mergeCells('AD'.$m.':AE'.$m);
+			$objWorksheet->mergeCells('AF'.$m.':AG'.$m);
+			$objWorksheet->mergeCells('AH'.$m.':AI'.$m);
+		}
+		// Percobaan
+
 		foreach($data as $row){
-			if($i<22){
+			if($i<($b+1)){
+
 				if($row['jenis']=="m"){
 					$objPHPExcel->setActiveSheetIndex($index)
 								->setCellValue('L'.($barisPertama+1), $row['jumlah'])
