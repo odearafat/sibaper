@@ -764,7 +764,6 @@ class Barang_persediaan_controller extends CI_Controller {
 
 		foreach($data as $row){
 			if($i<($b+1)){
-
 				if($row['jenis']=="m"){
 					$objPHPExcel->setActiveSheetIndex($index)
 								->setCellValue('L'.($barisPertama+1), $row['jumlah'])
@@ -801,23 +800,24 @@ class Barang_persediaan_controller extends CI_Controller {
 		}
 
 			$objPHPExcel->setActiveSheetIndex($index)
-							->setCellValue('L39', '=SUM(L16:M38)')
-							->setCellValue('N39', '=SUM(N16:O38)');
+							->setCellValue('L'.(18+$b), '=SUM(L16:M'.(17+$b).')')
+							->setCellValue('N'.(18+$b), '=SUM(N16:O'.(17+$b).')')
+							->setCellValue('P'.(18+$b), '=P'.(16+$b));
 			//echo '=P'.($i+15);
-			if($i<22){
+			if($i<($b+1)){
 				$objPHPExcel->setActiveSheetIndex($index)
-							->setCellValue('P39', '=P'.($i+15))
-							->setCellValue('AH11', '=P39');
+							//->setCellValue('P'.(18+$b), '=P'.($i+15))
+							->setCellValue('AH11', '=P'.(16+$b));
 			}else{
 				$objPHPExcel->setActiveSheetIndex($index)
-							->setCellValue('AD16', '=L39')
-							->setCellValue('AD39', '=sum(AD16:AE38)')
-							->setCellValue('AF39', '=sum(AF16:AG38)')
-							->setCellValue('AH39', '=AH'.($barisanKedua-1))
-							->setCellValue('AF16', '=N39')
-							->setCellValue('AH16', '=P39')
-							->setCellValue('P39', '=P37')
-							->setCellValue('AK11', '=AH39');
+							->setCellValue('AD16', '=L'.(16+$b))
+							->setCellValue('AD'.(18+$b), '=L'.(18+$b).'+SUM(AD17:AE'.(17+$b).')')
+							->setCellValue('AF'.(18+$b), '=N'.(18+$b).'+SUM(AF17:AG'.(17+$b).')')
+							->setCellValue('AH'.(18+$b), '=AH'.($barisanKedua-1))
+							->setCellValue('AF16', '=N'.(16+$b))
+							->setCellValue('AH16', '=P'.(16+$b))
+							//->setCellValue('P39', '=P37')
+							->setCellValue('AH11', '=AH'.(18+$b));
 			}
 
 		if($jenisAksi=='download'){
