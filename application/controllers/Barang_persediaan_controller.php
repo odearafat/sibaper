@@ -712,7 +712,7 @@ class Barang_persediaan_controller extends CI_Controller {
 		}
 
 		$sortArray=array_multisort($idTransaksi, SORT_ASC,  $data);
-		//print_r($sortArray);
+		print_r($sortArray);
 		$i=1;
 		$barisPertama=16;
 		$barisanKedua=17;
@@ -742,7 +742,13 @@ class Barang_persediaan_controller extends CI_Controller {
 
 
 		//Percobaan
-		$b=round(count($data)/2);
+		$b=0;
+		if(count($data)==0){
+			$b=1;
+		}else{
+			$b=round((count($data))/2);
+		}
+
 		$objWorksheet = $objPHPExcel->getActiveSheet();
 		$objWorksheet->insertNewRowBefore(18,$b);
 		for ($m=18; $m<18+$b ; $m++) {
@@ -773,11 +779,13 @@ class Barang_persediaan_controller extends CI_Controller {
 								->setCellValue('N'.($barisPertama+1), $row['jumlah'])
 								->setCellValue('L'.($barisPertama+1), 0);
 				}
+
 				$objPHPExcel->setActiveSheetIndex($index)
 							->setCellValue('A'.($barisPertama+1), $i+1)
 							->setCellValue('D'.($barisPertama+1), $row['tgl_trx'])
 							->setCellValue('F'.($barisPertama+1), $row['uraian'])
 							->setCellValue('P'.($barisPertama+1), '=P'.($barisPertama).'+'.'L'.($barisPertama+1).'-'.'N'.($barisPertama+1));
+
 				$barisPertama++;
 			}else{
 				if($row['jenis']=="m"){
@@ -804,10 +812,12 @@ class Barang_persediaan_controller extends CI_Controller {
 							->setCellValue('N'.(18+$b), '=SUM(N16:O'.(17+$b).')')
 							->setCellValue('P'.(18+$b), '=P'.(16+$b));
 			//echo '=P'.($i+15);
+
 			if($i<($b+1)){
 				$objPHPExcel->setActiveSheetIndex($index)
-							//->setCellValue('P'.(18+$b), '=P'.($i+15))
-							->setCellValue('AH11', '=P'.(16+$b));
+							//->setCellValue('P'.(18+$b), '=P'.(16+$b))
+							->setCellValue('P'.(18+$b), '=P'.$barisPertama)
+							->setCellValue('AH11', '=P'.(18+$b));
 			}else{
 				$objPHPExcel->setActiveSheetIndex($index)
 							->setCellValue('AD16', '=L'.(16+$b))
@@ -848,8 +858,8 @@ class Barang_persediaan_controller extends CI_Controller {
 
 		//print_r($barang_persediaan);
 		$i=0;
-		$objPHPExcel=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template.xlsx');
-		$objPHPExcelCad=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template.xlsx');
+		$objPHPExcel=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template - Copy.xlsx');
+		$objPHPExcelCad=PHPExcel_IOFactory::load(APPPATH.'libraries/excel/template - Copy.xlsx');
 
 		foreach($barang_persediaan as $row){
 			$query1=$this->Barang_persediaan_model->get_barang_persediaan_by_id($row, $this->session->userdata('id_satker'));
