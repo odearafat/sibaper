@@ -608,15 +608,20 @@ class Barang_persediaan_controller extends CI_Controller {
 			$nm_satker=substr ($this->session->userdata('nm_satker'), 4, 50);
 		}
 
+		//Tahun anggaran
+		$pecahTanggalAwal =explode("-", $tglAwal);
+		$pecahTanggalAkhir =explode("-", $tglAkhir);
+		$tahun=$pecahTanggalAwal[0];
+
 		//Set Keterangan Barang
 		if(sizeof($query1)>0){
 			$objPHPExcel->setActiveSheetIndex($index)
 					->setCellValue('O4', ": ".$query1[0]->ur_brg)
 					->setCellValue('O5', ": ".$query1[0]->kd_brg)
 					->setCellValue('O6', ": ".$query1[0]->satuan)
-					->setCellValue('O7', ": ".$tglAwal.'  s/d  '.$tglAkhir)
+					->setCellValue('O7', ": ".$pecahTanggalAwal[2].'-'.$pecahTanggalAwal[1].'-'.$pecahTanggalAwal[0].'  s/d  '.$pecahTanggalAwal[2].'-'.$pecahTanggalAwal[1].'-'.$pecahTanggalAwal[0])
 					->setCellValue('A6', $nm_satker)
-					->setCellValue('AC6', ": ".'2017');
+					->setCellValue('AC6', ": ".$tahun);
 		}
 
 		$objDrawing=new PHPExcel_Worksheet_Drawing();
@@ -815,12 +820,15 @@ class Barang_persediaan_controller extends CI_Controller {
 							->setCellValue('P'.(18+$b), '=P'.(16+$b));
 			//echo '=P'.($i+15);
 
+			//Jika Hanya 1 Kolom
 			if($i<($b+1)){
 				$objPHPExcel->setActiveSheetIndex($index)
 							//->setCellValue('P'.(18+$b), '=P'.(16+$b))
 							->setCellValue('P'.(18+$b), '=P'.$barisPertama)
 							->setCellValue('AH11', '=P'.(18+$b));
-			}else{
+			}
+			//Dua Kolom
+			else{
 				$objPHPExcel->setActiveSheetIndex($index)
 							->setCellValue('AD16', '=L'.(16+$b))
 							->setCellValue('AD'.(18+$b), '=L'.(18+$b).'+SUM(AD17:AE'.(17+$b).')')
