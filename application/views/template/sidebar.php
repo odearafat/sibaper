@@ -8,12 +8,12 @@
               <a href="index.html" class="site_title" style="margin-bottom:20%; display:inline; align:center; height:100%; line-height:0px; width:100%">
 			  <!--<i class="fa fa-institution"></i>-->
 			  <small><b>Sistem Informasi <br> Barang Pemerintah</b></small></a>
-			 
+
             </div>
             <div class="clearfix" ></div>
 
             <!-- menu profile quick info -->
-            
+
              <!-- <div class="profile_pic">
                 <img src="<?=base_url()?>images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
@@ -34,49 +34,51 @@
                 <h3>General</h3>
                 <ul class="nav side-menu">
                   <li><a href="<?=base_url()?>beranda.html"><i class="fa fa-home"></i> Home </a>
-				<?php if($this->session->userdata('id_sibaper')!='21'){ 
+				<?php if($this->session->userdata('id_sibaper')!='21'){
 							echo'<li><a><i class="fa fa-desktop"></i> BMN <span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 									  <li><a href="'.base_url().'daftarBmn.html">Daftar BMN</a></li>';
 									  if($this->session->userdata('id_sibaper')=='1' || $this->session->userdata('id_sibaper')=='3'){}else{
 											echo 	'<li><a href="'.base_url().'inputPerawatan.html">Input Perawatan BMN</a></li> <li><a href="'.base_url().'inputBmn.html">Input BMN</a></li>';
 									  }
-									  
+
 							echo '</ul></li>';
 						}
-						
+
 						if($this->session->userdata('id_sibaper')!='22'){
 							echo '<li><a><i class="fa fa-clone"></i>Barang Persediaan <span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 									  <li><a href="'.base_url().'stok.html">Stok</a></li>';
 									  if($this->session->userdata('id_sibaper')=='1' || $this->session->userdata('id_sibaper')=='3'){}else{
-										  echo '<li><a href="'.base_url().'inputBarangPersediaan.html">Input Barang Persediaan</a></li>
-												<li><a href="'.base_url().'permintaanBarangPersediaan.html">Permintaan Barang Persediaan</a></li>';
+										  echo '<li><a href="'.base_url().'inputBarangPersediaan.html">Input Barang Masuk</a></li>
+                            <li><a href="'.base_url().'daftarInputBarangPersediaan.html">Edit Barang Masuk</a></li>
+												    <li><a href="'.base_url().'permintaanBarangPersediaan.html">Barang Keluar</a></li>
+                            <li><a href="'.base_url().'daftarPermintaanBarangPersediaan.html">Edit Barang Keluar</a></li>';
 									  }
-							echo '</ul></li>';		
-						}							
-                ?>  
-					
+							echo '</ul></li>';
+						}
+                ?>
+
 					<li><a><i class="fa fa-file-o"></i>Laporan <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu">
-						<?php //if($this->session->userdata('id_sibaper')==1){ 
+						<?php //if($this->session->userdata('id_sibaper')==1){
 										echo '<li><a href="'.base_url().'karkenBMN.html">Kartu Kendali BMN</a></li>';
 										echo '<li><a href="'.base_url().'daftarAset.html">Rekap Aset BMN</a></li>';
 										//}
 								//else{
 									echo '<li><a href="'.base_url().'karkenATK.html">Kartu Kendali ATK</a></li>';
-									
+
 									echo '<li><a href="'.base_url().'permintaanAtkUnitKerja.html">Permintaan ATK Unit Kerja</a></li>';
-									
-									
+
+
 									//}
-								
+
 						?>
 						</ul>
 					</li>
                 </ul>
               </div>
-	  
+
                           <?php if($this->session->userdata('id_sibaper')==1 || $this->session->userdata('id_sibaper')==3 ){
 				}else{
 				echo '<div class="menu_section">
@@ -90,9 +92,9 @@
 					}?>
                 <?php echo '</ul>
 				</div>';}?>
-			
+
             </div>
-			
+
             <!-- /sidebar menu -->
 			 <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">

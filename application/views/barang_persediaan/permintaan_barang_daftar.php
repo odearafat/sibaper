@@ -1,4 +1,4 @@
-<div role="tabpanel" class="tab-pane fade " id="tab_content2" aria-labelledby="home-tab">
+<div role="tabpanel" class="tab-pane fade active in" id="tab_content2" aria-labelledby="home-tab">
 	  <table id="adatatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
 	  <thead>
 		<tr>

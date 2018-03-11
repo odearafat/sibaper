@@ -39,8 +39,6 @@ class Barang_persediaan_controller extends CI_Controller {
 			$content['idStok']='tabelStok2';
 			foreach($satker as $row)
 			{
-
-
 					if($row->id_satker==$this->session->userdata('id_satker')){
 						$content['panel']=$content['panel'].'<option selected="selected" href="'.base_url().'stok/'.$row->id_satker.'" value="'.$row->id_satker.'">'
 						.$row->nm_satker.' </option>';
@@ -225,10 +223,27 @@ class Barang_persediaan_controller extends CI_Controller {
 	{
 		$content['page']='barang_persediaan/input_barang_persediaan';
 		$content['pageInputOrEdit']='barang_persediaan/input_barang_persediaan_ajukan';
-		$content['judul_halaman']='Input Barang Persediaan`';
+		$content['judul_halaman']='Input Barang Persediaan';
 		//$this->load->vars($data);
 		$query=$this->Barang_persediaan_model->get_stok($this->session->userdata('id_satker'));
 		$content['barang_persediaan']=$query;
+
+
+		//$daftar_barang=$this->Barang_persediaan_model->query_daftar_transaksi_masuk($this->session->userdata('id_satker'));
+		//print_r($daftar_barang);
+		//$content['daftar_barang']=$daftar_barang;
+		$this->load->view('template/layout', $content);
+
+	}
+
+	public function daftar_input_barang()
+	{
+		$content['page']='barang_persediaan/daftar_input_barang_persediaan';
+		//$content['pageInputOrEdit']='barang_persediaan/input_barang_persediaan_ajukan';
+		$content['judul_halaman']='Daftar Barang Persediaan';
+		//$this->load->vars($data);
+		//$query=$this->Barang_persediaan_model->get_stok($this->session->userdata('id_satker'));
+		//$content['barang_persediaan']=$query;
 
 
 		$daftar_barang=$this->Barang_persediaan_model->query_daftar_transaksi_masuk($this->session->userdata('id_satker'));
@@ -255,9 +270,10 @@ class Barang_persediaan_controller extends CI_Controller {
 			$content['tglMasuk']=$this->setDateFormatToField2($transaksi[0]->tgl_masuk);
 		}
 
-		$daftar_barang=$this->Barang_persediaan_model->query_daftar_transaksi_masuk($this->session->userdata('id_satker'));
+		//$daftar_barang=$this->Barang_persediaan_model->query_daftar_transaksi_masuk($this->session->userdata('id_satker'));
 		//print_r($daftar_barang);
-		$content['daftar_barang']=$daftar_barang;
+		//$content['daftar_barang']=$daftar_barang;
+
 		$content['idTrxMasuk']=$idTrxMasuk;
 		$this->load->view('template/layout', $content);
 
@@ -328,13 +344,32 @@ class Barang_persediaan_controller extends CI_Controller {
 		$query=$this->Barang_persediaan_model->get_stok($this->session->userdata('id_satker'));
 		$queryBidang=$this->Barang_persediaan_model->get_bidang();
 		$querySeksi=$this->Barang_persediaan_model->get_seksi();
-		$queryDataPermintaan=$this->Barang_persediaan_model->query_daftar_transaksi_keluar($this->session->userdata('id_satker'));
+		//$queryDataPermintaan=$this->Barang_persediaan_model->query_daftar_transaksi_keluar($this->session->userdata('id_satker'));
 
 
 		$content['barang_persediaan']=$query;
 		$content['page_edit_or_no']='barang_persediaan/permintaan_barang_ajukan';
-		$content['daftar_barang']=$queryDataPermintaan;
+		//$content['daftar_barang']=$queryDataPermintaan;
 		$content['unit_kerja']=$this->unitKerja($querySeksi, $queryBidang, $this->session->userdata('id_satker'));
+		//$this->load->vars($data);
+
+		$this->load->view('template/layout', $content);
+	}
+
+	public function daftar_permintaan_barang()
+	{
+		$content['page']='barang_persediaan/daftar_permintaan_barang_persediaan';
+		$content['judul_halaman']='Daftar Permintaan Barang Persediaan';
+		//$query=$this->Barang_persediaan_model->get_stok($this->session->userdata('id_satker'));
+		//$queryBidang=$this->Barang_persediaan_model->get_bidang();
+		//$querySeksi=$this->Barang_persediaan_model->get_seksi();
+		$queryDataPermintaan=$this->Barang_persediaan_model->query_daftar_transaksi_keluar($this->session->userdata('id_satker'));
+
+
+		//$content['barang_persediaan']=$query;
+		//$content['page_edit_or_no']='barang_persediaan/permintaan_barang_ajukan';
+		$content['daftar_barang']=$queryDataPermintaan;
+		//$content['unit_kerja']=$this->unitKerja($querySeksi, $queryBidang, $this->session->userdata('id_satker'));
 		//$this->load->vars($data);
 
 		$this->load->view('template/layout', $content);
@@ -346,7 +381,7 @@ class Barang_persediaan_controller extends CI_Controller {
 		$query=$this->Barang_persediaan_model->get_stok($this->session->userdata('id_satker'));
 		$queryBidang=$this->Barang_persediaan_model->get_bidang();
 		$querySeksi=$this->Barang_persediaan_model->get_seksi();
-		$queryDataPermintaan=$this->Barang_persediaan_model->query_daftar_transaksi_keluar($this->session->userdata('id_satker'));
+		//$queryDataPermintaan=$this->Barang_persediaan_model->query_daftar_transaksi_keluar($this->session->userdata('id_satker'));
 		$queryTrx=$this->Barang_persediaan_model->queryItemTrxKeluar($idTrxKeluar, $this->session->userdata('id_satker'));
 
 		$content['tgl_keluar']="";
@@ -363,7 +398,7 @@ class Barang_persediaan_controller extends CI_Controller {
 		$content['transaksi']=$queryTrx;
 		$content['barang_persediaan']=$query;
 		$content['page_edit_or_no']='barang_persediaan/permintaan_barang_ajukan_edit';
-		$content['daftar_barang']=$queryDataPermintaan;
+		//$content['daftar_barang']=$queryDataPermintaan;
 		$content['unit_kerja']=$this->unitKerja($querySeksi, $queryBidang, $this->session->userdata('id_satker'));
 		//$this->load->vars($data);
 
@@ -459,7 +494,8 @@ class Barang_persediaan_controller extends CI_Controller {
 		return $elementResult;
 	}
 
-	public function kartu_kendali_page(){
+	public function kartu_kendali_page()
+	{
 		$content['page']='barang_persediaan/kartu_kendali_atk';
 		$content['judul_halaman']='Kartu Kendali ATK';
 		$query=$this->Barang_persediaan_model->get_stok($this->session->userdata('id_satker'));
@@ -472,6 +508,7 @@ class Barang_persediaan_controller extends CI_Controller {
 		//echo $a;
 		$this->load->view('template/layout', $content);
 	}
+
 	public function aksi_KarkenAtk(){
 		$content['page']='barang_persediaan/kartu_kendali_atk';
 		$content['judul_halaman']='Kartu Kendali ATK';
@@ -484,7 +521,7 @@ class Barang_persediaan_controller extends CI_Controller {
 
 		$barang_persediaan=$this->olahGetBarangPersediaan($barang_persediaan, $tglAwal, $tglAkhir);
 
-		//print_r($barang_persediaan);
+
 		$content['barangPersediaanCad']=json_encode($barang_persediaan);
 		$content['tglMasukCad']=$tglAwal;
 		$content['tglKeluarCad']=$tglAkhir;
@@ -509,6 +546,7 @@ class Barang_persediaan_controller extends CI_Controller {
 		$j=0;
 
 		//print_r($barang_persediaan);
+
 		foreach($barang_persediaan as $row){
 			if($j==0){
 				$isi=$isi.'<div role="tabpanel" style="text-align:center" class="tab-pane fade active in" id="tab_content0" aria-labelledby="home-tab">';
@@ -523,37 +561,7 @@ class Barang_persediaan_controller extends CI_Controller {
 
 			$isi=$isi.'</div>';
 			$j++;
-			/*$b=500;
-			$objWorksheet->insertNewRowBefore(18,$b);
-			for ($i=18; $i<18+$b ; $i++) {
-				$objWorksheet->mergeCells('B'.$i.':C'.$i);
-				$objWorksheet->mergeCells('D'.$i.':E'.$i);
-				$objWorksheet->mergeCells('F'.$i.':K'.$i);
-				$objWorksheet->mergeCells('L'.$i.':M'.$i);
-				$objWorksheet->mergeCells('N'.$i.':O'.$i);
-				$objWorksheet->mergeCells('P'.$i.':Q'.$i);
-				$objWorksheet->mergeCells('P'.$i.':Q'.$i);
-				$objWorksheet->mergeCells('S'.$i.':T'.$i);
-				$objWorksheet->mergeCells('U'.$i.':W'.$i);
-				$objWorksheet->mergeCells('X'.$i.':AC'.$i);
-				$objWorksheet->mergeCells('AD'.$i.':AE'.$i);
-				$objWorksheet->mergeCells('AF'.$i.':AG'.$i);
-				$objWorksheet->mergeCells('AH'.$i.':AI'.$i);
-			}
 
-
-
-			$objectWriter=PHPExcel_IOFactory::createWriter($objPHPExcel, 'HTML');
-			$objectWriter->setSheetIndex(0);
-
-			ob_start();
-			$objectWriter->save('php://output');
-			$a = ob_get_contents();
-			ob_end_clean();
-
-			//$isi=$isi.'</div>';
-			$isi=$isi.$a.'</div>';
-			$j++;*/
 		}
 
 		$isi=$isi.'</div>';
@@ -561,8 +569,6 @@ class Barang_persediaan_controller extends CI_Controller {
 		$this->load->view('template/layout', $content);
 
 	}
-
-
 
 
 	public function olahGetBarangPersediaan($barang_persediaan, $tglAwal, $tglAkhir){
@@ -592,12 +598,8 @@ class Barang_persediaan_controller extends CI_Controller {
 		$query=$this->Barang_persediaan_model->queryTrxKeluar($kd_brg, $tglAwal, $tglAkhir, $this->session->userdata('id_satker'));
 		$query1=$this->Barang_persediaan_model->get_barang_persediaan_by_id($kd_brg, $this->session->userdata('id_satker'));
 		$query2=$this->Barang_persediaan_model->queryTrxMasuk($kd_brg, $tglAwal, $tglAkhir, $this->session->userdata('id_satker'));
-		$query3=$this->Barang_persediaan_model->queryStokAwalKeluar($tglAwal, $kd_brg);
-		$query4=$this->Barang_persediaan_model->queryStokAwalMasuk($tglAwal, $kd_brg);
-
-
-
-
+		$query3=$this->Barang_persediaan_model->queryStokAwalKeluar($tglAwal, $kd_brg, $this->session->userdata('id_satker'));
+		$query4=$this->Barang_persediaan_model->queryStokAwalMasuk($tglAwal, $kd_brg, $this->session->userdata('id_satker'));
 
 		$nm_satker="";
 		if(substr ($this->session->userdata('id_satker'), 2, 2)=="00"){
@@ -712,7 +714,7 @@ class Barang_persediaan_controller extends CI_Controller {
 		}
 
 		$sortArray=array_multisort($idTransaksi, SORT_ASC,  $data);
-		print_r($sortArray);
+		//print_r($sortArray);
 		$i=1;
 		$barisPertama=16;
 		$barisanKedua=17;

@@ -129,7 +129,9 @@ $route['downloadExcelPerUnitKerja'] = 'Barang_persediaan_controller/aksi_downloa
 
 $route['daftarBarangPersediaan.html'] = 'Barang_persediaan_controller/daftar_barang';
 $route['inputBarangPersediaan.html'] = 'Barang_persediaan_controller/input_barang';
+$route['daftarInputBarangPersediaan.html'] = 'Barang_persediaan_controller/daftar_input_barang';
 $route['permintaanBarangPersediaan.html'] = 'Barang_persediaan_controller/permintaan_barang';
+$route['daftarPermintaanBarangPersediaan.html'] = 'Barang_persediaan_controller/daftar_permintaan_barang';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
